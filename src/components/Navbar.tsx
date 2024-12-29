@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function NavbarComponent() {
     return (
-        <div className="fixed top-0 w-full">
+        <div className="fixed top-0 w-full z-50">
             <Navbar
                 isBlurred={false}
-                maxWidth="xl">
-
+                maxWidth="xl"
+            >
                 <NavbarContent justify="start">
                     <NavbarBrand>
                         <p className="font-semibold text-inherit">Levting</p>
