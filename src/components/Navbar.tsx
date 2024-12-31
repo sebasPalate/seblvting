@@ -51,7 +51,7 @@ export default function NavbarComponent() {
     }, []);
 
     return (
-        <div className="fixed top-0 w-full z-50">
+        <div className="fixed top-0 w-full z-50 justify-between">
             <Navbar isBlurred={false} maxWidth="xl">
                 <NavbarContent justify="start">
                     <NavbarBrand>
