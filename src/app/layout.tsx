@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="es">
-      <body className={`${inter.className} pt-16`}>
+      <body className={`${inter.className}`}>
         <NavbarComponent />
-        {children}
+        <div className="pt-16">{children}</div>
       </body>
     </html>
   );
