@@ -12,10 +12,10 @@ interface CardComponentProps {
 
 const CardComponent = ({ title, description, imageUrl, linkUrl }: CardComponentProps) => {
     return (
-        <Card radius="none" isHoverable className="relative w-full h-[90vh] bg-red-100">
+        <Card radius="none" isHoverable className="relative w-full h-[80vh] md:h-[60vh] lg:h-[90vh]">
             <Link href={linkUrl}>
                 <CardHeader className="absolute z-10">
-                    <p className="text-xl text-gray-100">{title}</p>
+                    <p className="text-base text-gray-100">{title}</p>
                 </CardHeader>
                 <Image
                     alt="Relaxing app background"
@@ -24,7 +24,7 @@ const CardComponent = ({ title, description, imageUrl, linkUrl }: CardComponentP
                     src={imageUrl}
                 />
                 <CardFooter className="absolute bottom-0 z-10">
-                    <p className="text-xl text-gray-100">{description}</p>
+                    <p className="text-base text-gray-100">{description}</p>
                 </CardFooter>
             </Link>
         </Card>

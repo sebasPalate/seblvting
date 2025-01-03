@@ -55,7 +55,7 @@ export default function NavbarComponent() {
             <Navbar isBlurred={false} maxWidth="xl">
                 <NavbarContent justify="start">
                     <NavbarBrand>
-                        <p className={`${fontColor} font-semibold transition-colors duration-200 ease-in-out`}>Levting</p>
+                        <p className={`${fontColor} font-semibold transition-colors duration-200 ease-in-out`}>Sebas.Palate</p>
                     </NavbarBrand>
                 </NavbarContent>
 
