@@ -9,7 +9,7 @@ const LinkIconComponent = ({ title, urlPage }: LinkIconComponentProps) => {
     return (
         <div className="flex items-center">
             <HiMiniArrowUpRight size={20} />
-            <a href={urlPage}>{title}</a>
+            <a href={urlPage} target='_blank'>{title}</a>
         </div>
 
     );

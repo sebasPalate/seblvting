@@ -51,23 +51,35 @@ export default function NavbarComponent() {
     }, []);
 
     return (
-        <div className="fixed top-0 w-full z-50 justify-between">
+        <div className="fixed top-0 w-full z-50 justify-between" role="navigation">
             <Navbar isBlurred={false} maxWidth="xl">
                 <NavbarContent justify="start">
                     <NavbarBrand>
-                        <p className={`${fontColor} font-semibold transition-colors duration-200 ease-in-out`}>Sebas.Palate</p>
+                        <Link
+                            href={"/"}
+                            className={`${fontColor} font-semibold transition-colors duration-200 ease-in-out`}
+                            aria-label="Página principal de Sebas Palate"
+                        >
+                            Sebas.Palate
+                        </Link>
                     </NavbarBrand>
                 </NavbarContent>
 
                 <NavbarContent justify="end" className={`${fontColor} font-semibold transition-colors duration-200 ease-in-out`}>
                     <NavbarItem>
-                        <Link href="#">Work</Link>
+                        <Link href="/work" aria-label="Página de trabajo de Sebas Palate">
+                            Work
+                        </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link href="#">About</Link>
+                        <Link href="/about" aria-label="Acerca de Sebas Palate">
+                            About
+                        </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link href="#">Contact</Link>
+                        <Link href="/contact" aria-label="Formulario de contacto">
+                            Contact
+                        </Link>
                     </NavbarItem>
                 </NavbarContent>
             </Navbar>

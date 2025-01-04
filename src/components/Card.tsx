@@ -1,4 +1,3 @@
-// components/CardComponent.js
 import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardFooter, CardHeader } from "@nextui-org/card";
@@ -12,13 +11,13 @@ interface CardComponentProps {
 
 const CardComponent = ({ title, description, imageUrl, linkUrl }: CardComponentProps) => {
     return (
-        <Card radius="none" isHoverable className="relative w-full h-[80vh] md:h-[60vh] lg:h-[90vh]">
+        <Card radius="none" isHoverable className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh]">
             <Link href={linkUrl}>
                 <CardHeader className="absolute z-10">
-                    <p className="text-base text-gray-100">{title}</p>
+                    <h2 className="text-base text-gray-100">{title}</h2>
                 </CardHeader>
                 <Image
-                    alt="Relaxing app background"
+                    alt={`Imagen representativa de ${title}`}
                     className="z-0 object-cover"
                     fill={true} // Esto asegura que la imagen ocupe toda el área del contenedor
                     src={imageUrl}
