@@ -17,6 +17,7 @@ export default function NavbarComponent() {
             "hero-section": "text-black", // Fondo claro, texto oscuro
             "video-section": "text-white", // Fondo oscuro (GIF), texto blanco
             "impacto-experiencia": "text-black", // Fondo claro, texto oscuro
+            "work": "text-black", // Fondo claro, texto oscuro
         };
 
         // Implementación del IntersectionObserver
@@ -35,6 +36,7 @@ export default function NavbarComponent() {
             document.getElementById("hero-section"),
             document.getElementById("video-section"),
             document.getElementById("impacto-experiencia"),
+            document.getElementById("work"),
         ];
 
         // Observamos cada una de las secciones si existen

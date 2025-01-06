@@ -10,20 +10,20 @@ const AccordionComponent = () => {
 
     const items = [
         {
-            title: "Web Apps",
-            content: "Create websites apps that impress and leave a memorable user experience. From crafting user flows and moodboards to designing web and mobile applications and websites, I will ensure that your digital presence is user-friendly and with precision, backed by a cohesive design system. Your customers are in for an experience they'll rave about.",
-            wordKeys: ["Websites", "Design Systems"]
+            title: "Desarrollo Web",
+            content: "Crea aplicaciones web y sitios web que no solo impresionen, sino que también ofrezcan una experiencia de usuario fluida y memorable. Desde los flujos de usuario y mood boards hasta aplicaciones web y móviles totalmente funcionales, me aseguraré de que tu presencia digital sea intuitiva, precisa y respaldada por un sistema de diseño coherente. Tus usuarios disfrutarán de una experiencia que nunca olvidarán",
+            wordKeys: ["Aplicaciones Web", "Diseño de Sistemas"]
         },
         {
-            title: "Interaction",
-            content: "Elevate your brand with engaging interactions that tell your story and leave a lasting impact. From prototyping to small interactions, I will help you bring your brand's narrative to life.",
-            wordKeys: ["Prototyping"]
+            title: "Experiencias Web",
+            content: "Transforma tu presencia digital en una experiencia interactiva y cautivadora. Ya sea a través de prototipos o pequeñas interacciones, elevaré tu marca diseñando interfaces web intuitivas y visualmente atractivas que cuenten tu historia y resuenen con tu audiencia.",
+            wordKeys: ["Prototipado", "Interacciones"]
 
         },
         {
-            title: "Branding",
-            content: "Craft a brand identity that's a true masterpiece, molding it into something that reflects your values and makes your audience envious. From captivating logos and unforgettable naming to style guides and eye-catching illustrations, we'll infuse your brand with a unique personality. Together, we'll design a brand that's truly exceptional.",
-            wordKeys: ["Naming", "Brand Identity"]
+            title: "SEO y Branding",
+            content: "Impulsa la visibilidad y el reconocimiento de tu marca con técnicas estratégicas de SEO y marketing. Desde la optimización de tu sitio para motores de búsqueda hasta la creación de una identidad de marca inolvidable, te ayudaré a llegar a tu audiencia, generar tráfico y establecer una presencia digital duradera. Trabajemos juntos para construir una marca que destaque y deje una impresión perdurable.",
+            wordKeys: ["SEO", "Identidad de Marca"]
         }
     ];
 

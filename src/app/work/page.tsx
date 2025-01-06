@@ -28,6 +28,7 @@ export default function Work() {
         <section
             className="h-screen w-full bg-cover bg-center transition-background-image duration-200"
             style={{ backgroundImage: bgImageState ? `url(${bgImageState})` : "none" }}
+            id="work"
         >
             <ul className="flex flex-col gap-4 p-4">
                 {projects.map((project, index) => (
