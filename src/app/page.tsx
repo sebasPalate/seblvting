@@ -9,7 +9,7 @@ import AnimatedText from "@/components/animations/AnimatedText";
 
 export default function Home() {
   /* const sections = [
-    { title: "Currently", content: "FullStack Developer at EEASA" },
+    { title: "Currently", content: "FullStack Developer" },
     { title: "Freelancer", content: "Levting & others" },
     { title: "Experienced in", content: "Fullstack Development, AI & User Interaction" },
     { title: "Empowering", content: "Innovative Digital Solutions & Intelligent Products" },
@@ -33,15 +33,15 @@ export default function Home() {
       {/* Hero Section */}
       <header id="hero-section" className="px-4">
         {/* Image */}
-        {/* <div className="relative w-full h-[65vh] sm:h-[75vh] lg:h-[85vh]">
+        <div className="relative w-full h-[65vh] sm:h-[75vh] lg:h-[85vh]">
           <Image
-            src="/hero/sebas3.jpg"
+            src="/lvg.svg"
             alt="Imagen de portada de Sebas Palate"
             fill={true}
             priority={true}
             className="object-cover object-center"
           />
-        </div> */}
+        </div>
 
         {/* Title */}
         <div className="w-full mb-8 text-center">
@@ -77,13 +77,12 @@ export default function Home() {
       {/* Video/Image Section */}
       <section id="video-section" className="mt-36 mb-36">
         <div className="relative w-full h-[75vh] sm:h-[85vh] lg:h-[95vh]">
-          {/* GIF */}
-          <Image
-            src="/press.gif"
-            alt="GIF mostrando una demostración visual de los proyectos digitales innovadores de Sebas Palate"
-            fill={true}
-            className="object-cover object-center"
-            unoptimized
+          <video
+            src="/hero/slow.mp4"
+            autoPlay
+            loop
+            muted
+            className="object-cover object-center w-full h-full"
           />
 
           {/* Dark Overlay */}
@@ -91,9 +90,9 @@ export default function Home() {
 
           {/* Text Over GIF */}
           <div className="absolute inset-0 flex items-center justify-center px-4 z-30">
-            <h2 className="text-[clamp(1rem,4vw,3rem)] font-bold text-white opacity-90 text-center">
-              ¿Ready?
-            </h2>
+            <p className="text-[clamp(2rem,5vw,4rem)] md:text-[clamp(1rem,4vw,3rem)] font-bold text-white opacity-90 text-center">
+              ¿Listo?
+            </p>
           </div>
         </div>
       </section>
@@ -103,15 +102,13 @@ export default function Home() {
         <div className="max-w-3xl sm:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
           {/* Texto introductorio */}
           <p className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl text-left mb-5 leading-tight">
-            {/* Levitating digital projects with innovative solutions, creating user experiences that transform and elevate every interaction. */}
-            Levitando proyectos digitales con soluciones innovadoras, creando experiencias de usuario que transforman y elevan cada interacción.
+            Levitar proyectos digitales con soluciones innovadoras, creando experiencias de usuario que transforman y elevan cada interacción.
           </p>
 
           {/* Números */}
           <div className="flex flex-col gap-10 sm:flex-row sm:justify-between font-medium lg:text-center pt-16">
             <div className="flex flex-col">
               <div className="text-[10rem] sm:text-[9rem] md:text-[13rem] lg:text-[13rem] leading-none">
-                {/* <AnimatedNumber /> */}
                 +5
               </div>
 
@@ -131,12 +128,8 @@ export default function Home() {
       {/* Projects */}
       <section id="projects" className="px-4 my-14">
         <div className="flex justify-between items-center mt-40 mb-10">
-
-
           <AnimatedText title="Proyectos Destacados" />
-
-
-          <Link href="/work" aria-label="Ver todos los proyectos" className="text-xl">See All</Link>
+          <Link href="/work" aria-label="Ver todos los proyectos" className="text-xl">Ver Todos</Link>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between gap-3">
@@ -172,13 +165,13 @@ export default function Home() {
 
         <div className="flex flex-col">
           <div className="flex flex-wrap items-baseline gap-5 my-3">
-            <AreaComponent title="Web Development" imageUrl="/areas/webdeveloper.jpg" />
-            <AreaComponent title="Digital Transformation" imageUrl="/areas/digitaltransformation.png" />
+            <AreaComponent title="Desarrollo Web" imageUrl="/areas/webdeveloper.jpg" />
+            <AreaComponent title="Transformación Digital" imageUrl="/areas/digitaltransformation.png" />
           </div>
 
           <div className="flex flex-wrap items-baseline gap-5 my-3">
-            <AreaComponent title="Document Management" imageUrl="/areas/documentmanagement.png" />
-            <AreaComponent title="Process Automation" imageUrl="/areas/processautomation.jpg" />
+            <AreaComponent title="Documentos" imageUrl="/areas/documentmanagement.png" />
+            <AreaComponent title="Automatización" imageUrl="/areas/processautomation.jpg" />
           </div>
         </div>
       </section>
@@ -192,7 +185,6 @@ export default function Home() {
               Servicios
             </h4>
             <p className="max-w-lg text-gray-500 md:max-w-sm lg:max-w-md">
-              {/* From discovery to delivering a full product, my mission is to help businesses build amazing experiences through a first-class design. */}
               Desde la visión inicial hasta el producto final, me enfoco en crear soluciones innovadoras y experiencias inolvidables, fusionando diseño, funcionalidad y tecnología para llevar tus ideas a nuevas alturas.
             </p>
           </div>
@@ -206,12 +198,20 @@ export default function Home() {
       {/* Second Hero Section */}
       <section id="hero2-section">
         <div className="relative w-full h-[35vh] sm:h-[45vh] lg:h-[55vh]">
-          <Image
+          {/* <Image
             src="/hero/bg.jpg"
             alt="Imagen de fondo adicional"
             fill={true}
             priority
             className="object-cover object-center"
+          /> */}
+
+          <video
+            src="/hero/slow.mp4"
+            autoPlay
+            loop
+            muted
+            className="object-cover object-center w-full h-full"
           />
         </div>
       </section>
