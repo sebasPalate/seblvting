@@ -27,10 +27,6 @@ export default function Page() {
             {/* Descripción */}
             <section aria-labelledby="about-description" className="max-w-2xl md:max-w-4xl my-24 px-4">
                 <p className="text-3xl md:text-4xl md:leading-normal">
-                    {/* I am Sebastián Palate, a passionated designer, manager and keen observer. Specialized in immersive web experiences, I blend elegant aesthetics, interactive engaging animations, as well as intuitive usability to make the best of every project. */}
-
-                    {/* Soy Sebastián Palate, un desarrollador apasionado, aprendiz constante y observador creativo. Me enfoco en crear experiencias web atractivas, combinando diseño elegante con usabilidad intuitiva. Estoy comprometido con perfeccionar mis habilidades y aportar soluciones que destaquen y generen impacto. */}
-
                     Soy Sebastián Palate, un desarrollador apasionado y aprendiz constante. Creo experiencias web atractivas, combinando diseño elegante con usabilidad intuitiva, mientras perfecciono mis habilidades y busco generar impacto.
                 </p>
             </section>
@@ -52,21 +48,21 @@ export default function Page() {
                         <div className="md:w-1/2 md:ml-auto">
                             <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base">EEASA</span>
-                                <p className="text-base">Frontend Developer</p>
+                                <p className="text-base">Desarrollador Frontend</p>
                             </div>
 
                             <Divider className="mt-3" />
 
                             <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base">JCI AMBATO</span>
-                                <p className="text-base">Web Project Manager</p>
+                                <p className="text-base">Director de Proyectos Web y Voluntario</p>
                             </div>
 
                             <Divider className="mt-3" />
 
                             <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base">Levting</span>
-                                <p className="text-base">Freelance as Developer Web</p>
+                                <p className="text-base">Freelance como Desarrollador Web</p>
                             </div>
                         </div>
                     </div>

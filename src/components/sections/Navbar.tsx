@@ -70,17 +70,20 @@ export default function NavbarComponent() {
                 <NavbarContent justify="end" className={`${fontColor} font-semibold transition-colors duration-200 ease-in-out`}>
                     <NavbarItem>
                         <Link href="/work" aria-label="Página de trabajo de Sebas Palate">
-                            Work
+                            {/* Work */}
+                            Proyectos
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
                         <Link href="/about" aria-label="Acerca de Sebas Palate">
-                            About
+                            {/* About */}
+                            Acerca
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
                         <Link href="/contact" aria-label="Formulario de contacto">
-                            Contact
+                            {/* Contact */}
+                            Contacto
                         </Link>
                     </NavbarItem>
                 </NavbarContent>
