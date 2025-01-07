@@ -28,8 +28,8 @@ export default function Page() {
             </section>
 
             {/* Sección de contacto */}
-            <section aria-labelledby="contact-section" className="flex justify-center items-center h-[50vh] mb-[16vh]">
-                <div className="text-6xl">
+            <section aria-labelledby="contact-section" className="flex justify-center items-center h-[50vh] mb-[10vh] md:mb-[16vh]">
+                <div className="text-3xl md:text-6xl">
                     <a
                         id="contact-section"
                         href="mailto:sebas.palate11@gmail.com"
