@@ -62,7 +62,8 @@ export default function NavbarComponent() {
                             className={`${fontColor} font-semibold transition-colors duration-200 ease-in-out`}
                             aria-label="Página principal de Sebas Palate"
                         >
-                            Sebas.Palate
+                            <span className="block lg:hidden">Sebas.</span>
+                            <span className="hidden lg:block">Sebas.Palate</span>
                         </Link>
                     </NavbarBrand>
                 </NavbarContent>

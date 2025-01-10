@@ -69,10 +69,9 @@ export default function Footer() {
                         Derechos de Autor © 2025 Sebas.Palate. Todos los derechos reservados.
                     </p>
                     <p className="text-xs text-gray-400">
-                        {/* Development by Sebas.Palate */}
-                        Desarrollado por Sebas.Palate
+                        {/* Development by Sebas.Palate | Inspired by Cris.Araújo */}
+                        Desarrollado por Sebas.Palate | Inspirado en Cris.Araújo
                     </p>
-                    {/* <p className="text-xs text-gray-300">Inspired by Cris.Araújo</p> */}
                 </section>
             </div>
         </footer >

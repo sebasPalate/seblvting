@@ -77,14 +77,13 @@ export default function Home() {
       {/* Video/Image Section */}
       <section id="video-section" className="mt-36 mb-36">
         <div className="relative w-full h-[75vh] sm:h-[85vh] lg:h-[95vh]">
-          <video
-            src="/hero/slow.mp4"
-            autoPlay
-            loop
-            muted
-            className="object-cover object-center w-full h-full"
+          <Image
+            src="/hero/slow.gif"
+            alt="Imagen de fondo adicional"
+            fill={true}
+            priority
+            className="object-cover object-center"
           />
-
           {/* Dark Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-60 z-20"></div>
 
@@ -198,20 +197,12 @@ export default function Home() {
       {/* Second Hero Section */}
       <section id="hero2-section">
         <div className="relative w-full h-[35vh] sm:h-[45vh] lg:h-[55vh]">
-          {/* <Image
-            src="/hero/bg.jpg"
+          <Image
+            src="/hero/slow.gif"
             alt="Imagen de fondo adicional"
             fill={true}
             priority
             className="object-cover object-center"
-          /> */}
-
-          <video
-            src="/hero/slow.mp4"
-            autoPlay
-            loop
-            muted
-            className="object-cover object-center w-full h-full"
           />
         </div>
       </section>
