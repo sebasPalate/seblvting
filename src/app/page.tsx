@@ -1,6 +1,6 @@
 import AccordionComponent from "@/components/Accordion";
 import AreaComponent from "@/components/Area";
-import CardComponent from "@/components/Card";
+import CardComponent from "@/components/Cards/Card";
 import Footer from "@/components/sections/Footer";
 import Image from "next/image";
 import Link from "next/link";

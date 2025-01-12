@@ -5,8 +5,7 @@ export default function Page() {
         <main className="flex flex-col mt-16">
             {/* Bienvenida */}
             <section className="max-w-5xl mb-10 px-4">
-                <h1 className="text-xl md:text-6xl">
-                    {/* LET&apos;S CREATE IMPACT TOGETHER */}
+                <h1 className="text-5xl md:text-6xl">
                     CREEMOS IMPACTO JUNTOS
                     </h1>
             </section>
