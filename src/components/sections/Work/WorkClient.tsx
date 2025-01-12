@@ -124,16 +124,14 @@ export default function WorkClient() {
 
             {/* Contenido desplazable */}
             <div className="relative z-10 transition-all duration-500">
-                {/* {isGridView ? renderGridView() : renderListView()} */}
-
                 {/* Vista por defecto grid en pantallas pequeñas, lista en pantallas medianas y grandes */}
                 <div className="block lg:hidden">
-                    {renderGridView()} {/* Vista grid para pantallas pequeñas */}
+                    {renderGridView()}
                 </div>
 
                 {/* Vista en lista, oculta en pantallas pequeñas, visible en medianas */}
                 <div className="hidden lg:block">
-                    {isGridView ? renderGridView() : renderListView()} {/* Cambia entre grid y lista en pantallas medianas y grandes */}
+                    {isGridView ? renderGridView() : renderListView()}
                 </div>
             </div>
         </div>

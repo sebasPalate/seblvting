@@ -40,7 +40,6 @@ export default function Page() {
 
                 <div className="flex flex-col w-full justify-end">
                     <h3 className="text-3xl md:text-5xl">
-                        {/* 2024 - Present */}
                         2024 - Presente
                     </h3>
                     <Divider className="mt-3" />
@@ -54,8 +53,17 @@ export default function Page() {
                             <Divider className="mt-3" />
 
                             <div className="flex flex-col gap-2 my-3">
+                                <span className="text-base">seblvting (Sebas.Palate)</span>
+                                <p className="text-base">
+                                    Diseño y Desarrollo de Portafolio
+                                </p>
+                            </div>
+
+                            <Divider className="mt-3" />
+
+                            <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base">JCI AMBATO</span>
-                                <p className="text-base">Director de Proyectos Web y Voluntario</p>
+                                <p className="text-base">Miembro y Director de Proyectos Web</p>
                             </div>
 
                             <Divider className="mt-3" />
@@ -71,11 +79,13 @@ export default function Page() {
                     <Divider className="my-2" />
                     <div className="flex flex-col gap-2 w-full">
                         <div className="md:w-1/2 md:ml-auto">
+
                             <div className="flex flex-col gap-2 my-3">
-                                <span className="text-base">seblvting (Sebas.Palate)</span>
+                                <span className="text-base">
+                                    Auditor Informático | Pasante
+                                </span>
                                 <p className="text-base">
-                                    {/* Portfolio design and development */}
-                                    Diseño y Desarrollo de Portafolio
+                                    Departamento de Tecnologías del Cuerpo de Bomberos (CBA)
                                 </p>
                             </div>
 
@@ -84,7 +94,7 @@ export default function Page() {
                             <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base">
                                     {/* IT Support Technician */}
-                                    Técnico de Soporte de TI
+                                    Técnico de Soporte de TI | Pasante
                                 </span>
                                 <p className="text-base">
                                     {/* UTA Technical Support Center (CST) */}

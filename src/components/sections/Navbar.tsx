@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 // Definir el tipo del estado
 type FontColor = "text-black" | "text-white";
@@ -52,6 +53,9 @@ export default function NavbarComponent() {
         };
     }, []);
 
+    // Obtener la ruta actual
+    const pathname = usePathname();
+
     return (
         <div className="fixed top-0 w-full z-50 justify-between" role="navigation">
             <Navbar isBlurred={false} maxWidth="xl">
@@ -68,21 +72,27 @@ export default function NavbarComponent() {
                     </NavbarBrand>
                 </NavbarContent>
 
-                <NavbarContent justify="end" className={`${fontColor} font-semibold transition-colors duration-200 ease-in-out`}>
+                <NavbarContent justify="end" className={`${fontColor} font-semibold transition-colors duration-200 ease-in-out gap-8`}>
                     <NavbarItem>
-                        <Link href="/work" aria-label="Página de trabajo de Sebas Palate">
+                        <Link href="/work"
+                            className={`${pathname === "/work" ? "line-through" : ""}`}
+                            aria-label="Página de trabajo de Sebas Palate">
                             {/* Work */}
                             Proyectos
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link href="/about" aria-label="Acerca de Sebas Palate">
+                        <Link href="/about"
+                            className={`${pathname === "/about" ? "line-through" : ""}`}
+                            aria-label="Acerca de Sebas Palate">
                             {/* About */}
                             Acerca
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link href="/contact" aria-label="Formulario de contacto">
+                        <Link href="/contact"
+                            className={`${pathname === "/contact" ? "line-through" : ""}`}
+                            aria-label="Formulario de contacto">
                             {/* Contact */}
                             Contacto
                         </Link>

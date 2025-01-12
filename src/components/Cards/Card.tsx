@@ -12,9 +12,6 @@ interface CardComponentProps {
 const CardComponent = ({ title, description, imageUrl, linkUrl }: CardComponentProps) => {
     return (
         <Card radius="none" isHoverable className="relative w-full h-[70vh] md:h-[80vh] lg:h-[90vh]">
-            {/* <Card radius="none" isHoverable className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh]"> */}
-
-            
             <Link href={linkUrl}>
                 <CardHeader className="absolute z-10">
                     <h2 className="text-base text-gray-100">{title}</h2>
@@ -22,7 +19,7 @@ const CardComponent = ({ title, description, imageUrl, linkUrl }: CardComponentP
                 <Image
                     alt={`Imagen representativa de ${title}`}
                     className="z-0 object-cover"
-                    fill={true} // Esto asegura que la imagen ocupe toda el área del contenedor
+                    fill={true}
                     src={imageUrl}
                 />
                 <CardFooter className="absolute bottom-0 z-10">
