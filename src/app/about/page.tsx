@@ -1,5 +1,5 @@
 /* import CardComponent from "@/components/Card"; */
-import Footer from "@/components/sections/Footer";
+import Footer from "@/components/global/Footer";
 import { Divider } from "@nextui-org/divider";
 /* import Image from "next/image"; */
 
@@ -63,7 +63,7 @@ export default function Page() {
 
                             <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base">JCI AMBATO</span>
-                                <p className="text-base">Miembro y Director de Proyectos Web</p>
+                                <p className="text-base">Miembro y Director de Proyectos Tecnológicos</p>
                             </div>
 
                             <Divider className="mt-3" />

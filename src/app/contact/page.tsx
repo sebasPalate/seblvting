@@ -1,4 +1,4 @@
-import Footer from "@/components/sections/Footer";
+import Footer from "@/components/global/Footer";
 
 export default function Page() {
     return (
@@ -7,7 +7,7 @@ export default function Page() {
             <section className="max-w-5xl mb-10 px-4">
                 <h1 className="text-5xl md:text-6xl">
                     CREEMOS IMPACTO JUNTOS
-                    </h1>
+                </h1>
             </section>
 
             {/* Descripción */}
@@ -23,7 +23,7 @@ export default function Page() {
                 <p className="text-gray-400 text-3xl">
                     {/* Or just to say hello */}
                     O simplemente para saludar.
-                    </p>
+                </p>
             </section>
 
             {/* Sección de contacto */}

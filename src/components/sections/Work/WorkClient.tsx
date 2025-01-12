@@ -4,16 +4,9 @@ import { Card, CardBody, CardFooter } from "@nextui-org/card";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { projects } from "@/data/projects";
 
 export default function WorkClient() {
-
-    const projects = [
-        { title: "SisDocx", image: "/projects/sisdocx.webp", description: ["FullStack Project", "UX/UI Design"] },
-        { title: "Lexel", image: "/projects/sisdocx.webp", description: ["Frontend Project"] },
-        { title: "JCI Ambato", image: "/projects/sisdocx.webp", description: ["Frontend Project", "UX/UI Design"] },
-        { title: "Factx", image: "/projects/sisdocx.webp", description: ["Frontend Project"] },
-        { title: "JCI Ambato", image: "/projects/sisdocx.webp", description: ["Frontend Project", "UX/UI Design"] },
-    ];
 
     const [bgImageState, setBgImage] = useState<string>(""); // Imagen activa para el fondo
     const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null); // Índice del proyecto activo
@@ -35,7 +28,7 @@ export default function WorkClient() {
     const renderGridView = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-4">
             {projects.map((project, index) => (
-                <Link key={index} href="#" aria-label={`Acceder al proyecto titulado ${project.title}, que incluye: ${project.description.join(", ")}`}>
+                <Link key={index} href={project.link} aria-label={`Acceder al proyecto titulado ${project.title}`}>
                     <Card
                         className={` h-[90vh] md:h-[100vh] lg:h-[110vh]
                          ${index % 3 === 1 ? 'lg:mt-20' : '' // Agregar margen superior a la segunda tarjeta del grupo
@@ -54,7 +47,7 @@ export default function WorkClient() {
 
                         <CardFooter className="flex flex-col items-start m-0 mt-8 p-0">
                             <h2 className="text-3xl text-black">{project.title}</h2>
-                            <p className="text-sm text-gray-500">{project.description.join(', ')}</p>
+                            <p className="text-sm text-gray-500">{project.wordKeys.join(', ')}</p>
                         </CardFooter>
                     </Card>
                 </Link>
@@ -65,19 +58,25 @@ export default function WorkClient() {
     // Renderiza la lista de proyectos
     const renderListView = () => (
         <ul className="flex flex-col gap-10 mx-4">
+
             {projects.map((project, index) => (
-                <li key={index} className="flex items-center justify-between">
-                    <div className="group" onMouseEnter={() => handleMouseEnter(index, project.image)} onMouseLeave={handleMouseLeave}>
-                        <Link href="#" aria-label={`Ir al proyecto: ${project.title}`} className="text-9xl group-hover:text-gray-200">
+                <div key={index} className="flex items-center justify-between">
+
+                    <div className="group" onMouseEnter={() => handleMouseEnter(index, project.imageBackground)} onMouseLeave={handleMouseLeave}>
+                        <Link href={project.link} aria-label={`Ir al proyecto: ${project.title}`} className="text-9xl underline-animation group-hover:text-gray-200">
                             {project.title}
                         </Link>
                     </div>
-                    <div className={`${activeProjectIndex === index ? 'opacity-100' : 'opacity-0'}`}>
-                        {project.description.map((desc, idx) => (
-                            <p key={idx}>{desc}</p>
-                        ))}
+
+                    <div className="w-40 h-full">
+                        <div className={`${activeProjectIndex === index ? 'opacity-100' : 'opacity-0'} text-gray-200 `}>
+                            {project.wordKeys.map((desc, idx) => (
+                                <p key={idx}>{desc}</p>
+                            ))}
+
+                        </div>
                     </div>
-                </li>
+                </div>
             ))}
         </ul>
     );
@@ -86,7 +85,7 @@ export default function WorkClient() {
         <div>
             {/* Contenedor del fondo estático */}
             <div
-                className="fixed inset-0 z-0 bg-cover bg-center transition-all duration-500"
+                className="fixed inset-0 z-0 bg-cover bg-center " /* transition-all duration-500 */
                 style={{
                     backgroundImage: bgImageState ? `url(${bgImageState})` : "none",
                     opacity: bgImageState ? 1 : 0, // Control de opacidad
@@ -105,7 +104,7 @@ export default function WorkClient() {
                             }`}
                         onClick={() => setIsGridView(false)}
                     >
-                        List
+                        Lista
                     </Button>
                     <Button
                         size="lg"
@@ -116,7 +115,7 @@ export default function WorkClient() {
                             }`}
                         onClick={() => setIsGridView(true)}
                     >
-                        Grid
+                        Rejilla
                     </Button>
                 </div>
             </div>
