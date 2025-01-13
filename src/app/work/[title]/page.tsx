@@ -156,11 +156,11 @@ export default function Page({ params }: { params: { title: string } }) {
             <ProjectDetails
                 challenge={{
                     title: project.challenge?.title || 'Título no disponible',
-                    description: project.challenge?.descripcion || 'Descripción no disponible',
+                    description: project.challenge?.description || 'Descripción no disponible',
                 }}
                 platform={{
                     title: project.platform?.title || 'Título no disponible',
-                    description: project.platform?.descripcion || 'Descripción no disponible',
+                    description: project.platform?.description || 'Descripción no disponible',
                     technologies: project.platform?.technologies || [],
                 }}
                 input={project.input || 'Aporte no disponible'}
