@@ -1,12 +1,12 @@
 import AccordionComponent from "@/components/ui/Accordion";
 import AreaComponent from "@/components/Area";
-import CardComponent from "@/components/cards/Card";
 import Footer from "@/components/global/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import AnimatedText from "@/components/animations/AnimatedText";
 import { projects } from "@/data/projects";
 import { sections } from "@/data/sections";
+import CardComponent from "@/components/cards/Card";
 
 
 export default function Home() {
