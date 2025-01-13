@@ -3,7 +3,7 @@ export const projects = [
     title: "Factx",
     description: "Sistema de Facturación Electrónica para la empresa Factx",
     detail: "Frontend Project",
-    reason: "Proyecto Académico de Gestión de Proyectos (2022)",
+    reason: "Proyecto Académico de Gestión de Proyectos (2023)",
     team: "Sebastián Palate (Desarrollador y Diseñador Principal)",
     wordKeys: ["UX/UI Design"],
     image: "/projects/Factx.jpg",
