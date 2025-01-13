@@ -1,5 +1,5 @@
 import { DiReact, DiPython, DiJava, DiPostgresql, DiHtml5 } from "react-icons/di";
-import { SiTailwindcss, SiNextdotjs, SiSpringboot, SiPostman, SiPrisma, SiNextui, SiRedux, SiTypescript, SiJavascript, SiStrapi, SiApachetomcat, SiGooglecloud } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiSpringboot, SiPostman, SiPrisma, SiNextui, SiRedux, SiTypescript, SiJavascript, SiStrapi, SiApachetomcat, SiGooglecloud, SiJupyter, SiOpencv } from "react-icons/si";
 
 const techIcons: Record<string, JSX.Element> = {
     React: <DiReact className="text-blue-500 text-6xl" />,
@@ -19,6 +19,9 @@ const techIcons: Record<string, JSX.Element> = {
     Strapi: <SiStrapi className="text-blue-600 text-6xl" />,
     ApacheTomcat: <SiApachetomcat className="text-red-500 text-6xl" />,
     GoogleCloud: <SiGooglecloud className="text-blue-500 text-6xl" />,
+    Python: <DiPython className="text-yellow-400 text-6xl" />,
+    Jupyter: <SiJupyter className="text-orange-500 text-6xl" />,
+    OpenCV: <SiOpencv className="text-green-500 text-6xl" />
 };
 
 export const PlatformIcons = ({ technologies }: { technologies: string[] }) => (
