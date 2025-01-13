@@ -62,7 +62,7 @@ export default function Home() {
       <section id="video-section" className="mt-36 mb-36">
         <div className="relative w-full h-[75vh] sm:h-[85vh] lg:h-[95vh]">
           <Image
-            src="/hero/slow.gif"
+            src="/heros/slow.gif"
             alt="Imagen de fondo adicional"
             fill={true}
             priority
@@ -182,7 +182,7 @@ export default function Home() {
       <section id="hero2-section">
         <div className="relative w-full h-[35vh] sm:h-[45vh] lg:h-[55vh]">
           <Image
-            src="/hero/slow.gif"
+            src="/heros/slow.gif"
             alt="Imagen de fondo adicional"
             fill={true}
             priority
