@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Card, CardFooter, CardHeader } from "@nextui-org/card";
+import { Card, CardFooter, CardHeader } from '@nextui-org/card';
 
 interface CardComponentProps {
     title: string;
