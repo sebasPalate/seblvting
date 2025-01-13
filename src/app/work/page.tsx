@@ -1,9 +1,9 @@
-import WorkClient from "@/components/sections/Work/WorkClient";
+import WorkClient from "@/components/sections/work/WorkClient";
 
 export default function Work() {
 
     return (
-        <main className="relative h-screen w-full mt-16" id="work">
+        <main className="my-16 mx-4" id="work">
             <WorkClient />
         </main>
     );

@@ -1,6 +1,7 @@
 /* import CardComponent from "@/components/Card"; */
-import Footer from "@/components/sections/Footer";
+import Footer from "@/components/global/Footer";
 import { Divider } from "@nextui-org/divider";
+import Image from "next/image";
 /* import Image from "next/image"; */
 
 export default function Page() {
@@ -25,11 +26,33 @@ export default function Page() {
             </section> */}
 
             {/* Descripción */}
-            <section aria-labelledby="about-description" className="max-w-2xl md:max-w-4xl my-24 px-4">
+            {/* <section aria-labelledby="about-description" className="max-w-2xl md:max-w-4xl my-24 px-4">
                 <p className="text-3xl md:text-4xl md:leading-normal">
                     Soy Sebastián Palate, un desarrollador apasionado y aprendiz constante. Creo experiencias web atractivas, combinando diseño elegante con usabilidad intuitiva, mientras perfecciono mis habilidades y busco generar impacto.
                 </p>
+            </section> */}
+
+            <section className="flex flex-col-reverse md:flex-row items-center sm:justify-center gap-10 md:gap-20 my-10 md:my-20 px-4">
+                {/* Texto descriptivo */}
+                <div className="text-left max-w-xl md:max-w-4xl">
+                    <p className="text-xl md:text-3xl leading-relaxed md:leading-normal">
+                        Soy Sebastián Palate, un desarrollador apasionado y aprendiz constante. Creo experiencias web atractivas, combinando diseño elegante con usabilidad intuitiva, mientras perfecciono mis habilidades y busco generar impacto.
+                    </p>
+                </div>
+
+                {/* Imagen */}
+                <div className="flex justify-center items-center w-full">
+                    <Image
+                        src="/heros/sebas.png"
+                        alt="Imagen representativa del autor, Sebastián Palate."
+                        priority
+                        width={320}
+                        height={320}
+                        className="object-cover object-center"
+                    />
+                </div>
             </section>
+
 
             {/* Experiencia */}
             <section aria-labelledby="experience-section" className="flex flex-col gap-10 px-4 mb-10">
@@ -40,7 +63,6 @@ export default function Page() {
 
                 <div className="flex flex-col w-full justify-end">
                     <h3 className="text-3xl md:text-5xl">
-                        {/* 2024 - Present */}
                         2024 - Presente
                     </h3>
                     <Divider className="mt-3" />
@@ -54,8 +76,17 @@ export default function Page() {
                             <Divider className="mt-3" />
 
                             <div className="flex flex-col gap-2 my-3">
+                                <span className="text-base">seblvting (Sebas.Palate)</span>
+                                <p className="text-base">
+                                    Diseño y Desarrollo de Portafolio
+                                </p>
+                            </div>
+
+                            <Divider className="mt-3" />
+
+                            <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base">JCI AMBATO</span>
-                                <p className="text-base">Director de Proyectos Web y Voluntario</p>
+                                <p className="text-base">Miembro y Director de Proyectos Tecnológicos</p>
                             </div>
 
                             <Divider className="mt-3" />
@@ -71,11 +102,13 @@ export default function Page() {
                     <Divider className="my-2" />
                     <div className="flex flex-col gap-2 w-full">
                         <div className="md:w-1/2 md:ml-auto">
+
                             <div className="flex flex-col gap-2 my-3">
-                                <span className="text-base">seblvting (Sebas.Palate)</span>
+                                <span className="text-base">
+                                    Auditor Informático | Pasante
+                                </span>
                                 <p className="text-base">
-                                    {/* Portfolio design and development */}
-                                    Diseño y Desarrollo de Portafolio
+                                    Departamento de Tecnologías del Cuerpo de Bomberos (CBA)
                                 </p>
                             </div>
 
@@ -84,7 +117,7 @@ export default function Page() {
                             <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base">
                                     {/* IT Support Technician */}
-                                    Técnico de Soporte de TI
+                                    Técnico de Soporte de TI | Pasante
                                 </span>
                                 <p className="text-base">
                                     {/* UTA Technical Support Center (CST) */}

@@ -1,31 +1,15 @@
-import AccordionComponent from "@/components/Accordion";
+import AccordionComponent from "@/components/ui/Accordion";
 import AreaComponent from "@/components/Area";
-import CardComponent from "@/components/Cards/Card";
-import Footer from "@/components/sections/Footer";
+import CardComponent from "@/components/cards/Card";
+import Footer from "@/components/global/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import AnimatedText from "@/components/animations/AnimatedText";
+import { projects } from "@/data/projects";
+import { sections } from "@/data/sections";
 
 
 export default function Home() {
-  /* const sections = [
-    { title: "Currently", content: "FullStack Developer" },
-    { title: "Freelancer", content: "Levting & others" },
-    { title: "Experienced in", content: "Fullstack Development, AI & User Interaction" },
-    { title: "Empowering", content: "Innovative Digital Solutions & Intelligent Products" },
-    { title: "Enthusiastic about", content: "Art, Technology, AI & User-Centered Design" },
-    { title: "From", content: "Ecuador" },
-  ]; */
-
-  const sections = [
-    { title: "Actualmente", content: "Desarrollador FullStack" },
-    { title: "Freelancer", content: "Levting y otros" },
-    { title: "Con experiencia en", content: "Desarrollo Frontend, IA y Interacción con el Usuario" },
-    { title: "Empoderando", content: "Soluciones Digitales Innovadoras y Productos Inteligentes" },
-    { title: "Entusiasta de", content: "Arte, Tecnología, IA y Diseño Centrado en el Usuario" },
-    { title: "De", content: "Ecuador" },
-  ];
-
 
   return (
     <main className="flex flex-col mt-16">
@@ -35,7 +19,7 @@ export default function Home() {
         {/* Image */}
         <div className="relative w-full h-[65vh] sm:h-[75vh] lg:h-[85vh]">
           <Image
-            src="/lvg.svg"
+            src="/assets/lvg.svg"
             alt="Imagen de portada de Sebas Palate"
             fill={true}
             priority={true}
@@ -100,22 +84,22 @@ export default function Home() {
       <section id="impacto-experiencia" className="px-4">
         <div className="max-w-3xl sm:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
           {/* Texto introductorio */}
-          <p className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl text-left mb-5 leading-tight">
+          <p className="text-4xl leading-tight sm:text-4xl md:text-5xl lg:text-5xl text-left mb-5 ">
             Levitar proyectos digitales con soluciones innovadoras, creando experiencias de usuario que transforman y elevan cada interacción.
           </p>
 
           {/* Números */}
           <div className="flex flex-col gap-10 sm:flex-row sm:justify-between font-medium lg:text-center pt-16">
             <div className="flex flex-col">
-              <div className="text-[10rem] sm:text-[9rem] md:text-[13rem] lg:text-[13rem] leading-none">
-                +5
+              <div className="text-[10rem] sm:text-[9rem] md:text-[13rem] lg:text-[14rem] leading-none">
+                +7
               </div>
 
-              <p className="text-lg text-gray-500 xl:text-xl">Proyectos Desarrollados</p>
+              <p className="text-lg text-gray-500 xl:text-xl">Proyectos Totales</p>
             </div>
 
             <div className="flex flex-col">
-              <p className="text-[10rem] sm:text-[9rem] md:text-[13rem] lg:text-[13rem] leading-none">
+              <p className="text-[10rem] sm:text-[9rem] md:text-[13rem] lg:text-[14rem] leading-none">
                 •1
               </p>
               <p className="text-lg text-gray-500 xl:text-xl">Año/s de Experiencia</p>
@@ -133,22 +117,22 @@ export default function Home() {
 
         <div className="flex flex-col md:flex-row justify-between gap-3">
           <CardComponent
-            title="FullStack Project"
-            description="SisDocx"
-            imageUrl="/projects/SisDocx.jpg"
-            linkUrl="#"
+            title={projects[0].title}
+            detail={projects[0].detail}
+            image={projects[0].image}
+            linkUrl={projects[0].link}
           />
           <CardComponent
-            title="FullStack Project"
-            description="SisDocx"
-            imageUrl="/projects/SisDocx.jpg"
-            linkUrl="#"
+            title={projects[1].title}
+            detail={projects[1].detail}
+            image={projects[1].image}
+            linkUrl={projects[1].link}
           />
           <CardComponent
-            title="FullStack Project"
-            description="SisDocx"
-            imageUrl="/projects/SisDocx.jpg"
-            linkUrl="#"
+            title={projects[2].title}
+            detail={projects[2].detail}
+            image={projects[2].image}
+            linkUrl={projects[2].link}
           />
         </div>
       </section>
