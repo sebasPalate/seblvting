@@ -1,6 +1,7 @@
 /* import CardComponent from "@/components/Card"; */
 import Footer from "@/components/global/Footer";
 import { Divider } from "@nextui-org/divider";
+import Image from "next/image";
 /* import Image from "next/image"; */
 
 export default function Page() {
@@ -25,11 +26,33 @@ export default function Page() {
             </section> */}
 
             {/* Descripción */}
-            <section aria-labelledby="about-description" className="max-w-2xl md:max-w-4xl my-24 px-4">
+            {/* <section aria-labelledby="about-description" className="max-w-2xl md:max-w-4xl my-24 px-4">
                 <p className="text-3xl md:text-4xl md:leading-normal">
                     Soy Sebastián Palate, un desarrollador apasionado y aprendiz constante. Creo experiencias web atractivas, combinando diseño elegante con usabilidad intuitiva, mientras perfecciono mis habilidades y busco generar impacto.
                 </p>
+            </section> */}
+
+            <section className="flex flex-col-reverse md:flex-row items-center sm:justify-center gap-10 md:gap-20 my-10 md:my-20 px-4">
+                {/* Texto descriptivo */}
+                <div className="text-left max-w-xl md:max-w-4xl">
+                    <p className="text-xl md:text-3xl leading-relaxed md:leading-normal">
+                        Soy Sebastián Palate, un desarrollador apasionado y aprendiz constante. Creo experiencias web atractivas, combinando diseño elegante con usabilidad intuitiva, mientras perfecciono mis habilidades y busco generar impacto.
+                    </p>
+                </div>
+
+                {/* Imagen */}
+                <div className="flex justify-center items-center w-full">
+                    <Image
+                        src="/heros/sebas.png"
+                        alt="Imagen representativa del autor, Sebastián Palate."
+                        priority
+                        width={320}
+                        height={320}
+                        className="object-cover object-center"
+                    />
+                </div>
             </section>
+
 
             {/* Experiencia */}
             <section aria-labelledby="experience-section" className="flex flex-col gap-10 px-4 mb-10">

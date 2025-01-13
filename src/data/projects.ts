@@ -1,7 +1,15 @@
 export const projects = [
   {
-    id: "1",
-    title: "SisDocx",
+    title: "Factx",
+    description: "Sistema de Facturación Electrónica",
+    detail: "Frontend Project",
+    wordKeys: ["UX/UI Design"],
+    image: "/projects/Factx.jpg",
+    imageBackground: "/projects/bg-factx.webp",
+    link: "/work/Factx",
+  },
+  {
+    title: "LCK-Service",
     description: "Sistema Documental Eléctrico",
     detail: "FullStack Project",
     wordKeys: ["FullStack Project", "UX/UI Design", "React", "Node.js"],
@@ -10,17 +18,15 @@ export const projects = [
     link: "/work/SisDocx",
   },
   {
-    id: "2",
-    title: "Factx",
-    description: "Sistema de Facturación Electrónica",
+    title: "JCI Ambato",
+    description: "Sistema para la JCI Ambato",
     detail: "Frontend Project",
     wordKeys: ["UX/UI Design"],
     image: "/projects/Factx.jpg",
     imageBackground: "/projects/bg-factx.webp",
-    link: "/work/Factx",
+    link: "/work/JCIAmbato",
   },
   {
-    id: "3",
     title: "SisDocx",
     description: "Sistema Documental Eléctrico",
     detail: "FullStack Project",
@@ -29,14 +35,5 @@ export const projects = [
     imageBackground: "/projects/bg-sisdocx.webp",
     link: "/work/SisDocx",
   },
-  {
-    id: "4",
-    title: "Factx",
-    description: "Sistema de Facturación Electrónica",
-    detail: "Frontend Project",
-    wordKeys: ["UX/UI Design"],
-    image: "/projects/Factx.jpg",
-    imageBackground: "/projects/bg-factx.webp",
-    link: "/work/Factx",
-  },
+  
 ];

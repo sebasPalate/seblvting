@@ -26,7 +26,7 @@ export default function WorkClient() {
 
     // Renderiza las tarjetas de los proyectos en vista grid
     const renderGridView = () => (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project, index) => (
                 <Link key={index} href={project.link} aria-label={`Acceder al proyecto titulado ${project.title}`}>
                     <Card
@@ -57,7 +57,7 @@ export default function WorkClient() {
 
     // Renderiza la lista de proyectos
     const renderListView = () => (
-        <ul className="flex flex-col gap-10 mx-4">
+        <ul className="flex flex-col gap-12">
 
             {projects.map((project, index) => (
                 <div key={index} className="flex items-center justify-between">
