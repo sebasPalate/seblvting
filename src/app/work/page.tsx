@@ -1,4 +1,4 @@
-import WorkClient from "@/components/sections/work/WorkClient";
+import WorkClient from "@/components/sections/Work/WorkClient";
 
 export default function Work() {
 
