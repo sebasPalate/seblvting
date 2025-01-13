@@ -54,6 +54,35 @@ export const projects = [
       "Colaboré en el desarrollo de los modelos de predicción utilizando SVM y YOLO, y también en la integración del sistema con la base de datos para el almacenamiento de los resultados obtenidos.",
     githubUrl: "https://github.com/sebasPalate/7SW-IA-Colores",
   },
+
+  {
+    title: "seblvting",
+    description:
+      "seblvting (Sebas.Palate) es mi portafolio personal creado para mostrar mis proyectos, habilidades y experiencia como desarrollador web. Es un reflejo de mi trabajo y mi enfoque en el diseño UX/UI y el desarrollo frontend. El sitio está diseñado para ser visualmente atractivo, accesible y fácil de navegar, con la finalidad de proporcionar a los visitantes una experiencia fluida mientras exploran mis proyectos y conocimientos.",
+    detail: "Frontend Project",
+    reason: "Proyecto Personal (2025)",
+    team: ["Sebastián Palate (Desarrollador y Diseñador)"],
+    wordKeys: ["Portafolio", "Diseño UX/UI", "Desarrollo Web", "Next.js", "TailwindCSS"],
+    image: "/projects/Factx.jpg",
+    imageBackground: "/projects/bg-factx.webp",
+    link: "/work/seblvting",
+    challenge: {
+      title: "Crear un portafolio personal",
+      description:
+        "El principal reto de este proyecto fue crear un sitio web que representara de manera profesional y atractiva mi trabajo y habilidades. A través de una interfaz intuitiva y un diseño visualmente atractivo, busqué que los visitantes pudieran explorar fácilmente mis proyectos y entender mis capacidades. Fue un desafío integrar un diseño moderno, accesible, y que funcione perfectamente en todos los dispositivos.",
+    },
+    platform: {
+      title: "Un portafolio personal atractivo y funcional",
+      description:
+        "Para desarrollar el portafolio, utilicé Next.js con TypeScript para garantizar un rendimiento óptimo, y TailwindCSS para crear una interfaz responsiva, limpia y moderna. La plataforma está optimizada para ofrecer tiempos de carga rápidos y una experiencia visual fluida, adaptándose a dispositivos móviles y de escritorio. Además, se implementaron buenas prácticas de desarrollo web para asegurar que el portafolio sea accesible, funcional y fácil de navegar.",
+      technologies: ["NextJS", "TypeScript", "TailwindCSS"],
+    },
+    input:
+      "Me encargué de todo el proceso, desde el diseño inicial hasta el despliegue final. Implementé funcionalidades clave como una navegación intuitiva, una sección de proyectos destacada, y una presentación visualmente atractiva. Todo el diseño fue pensado para resaltar mis proyectos, habilidades y experiencias de manera clara y profesional. Además, optimicé la página para asegurar que se vea bien en todos los dispositivos, garantizando una experiencia consistente y agradable para los usuarios.",
+    githubUrl: "https://github.com/sebasPalate/seblvting",
+  },
+  
+
   {
     title: "LCK-Service",
     description:
@@ -62,8 +91,8 @@ export const projects = [
     reason: "Proyecto Académico de Gestión de Proyectos (2022)",
     team: ["Sebastián Palate (Desarrollo y Diseño)"],
     wordKeys: ["Gestión de Servicios", "FullStack", "Diseño UX/UI"],
-    image: "/projects/Factx.jpg",
-    imageBackground: "/projects/bg-factx.webp",
+    image: "/projects/SisDocx.jpg",
+    imageBackground: "/projects/bg-sisdocx.webp",
     link: "/work/LCK-Service",
     challenge: {
       title: "Optimización de la gestión veterinaria",
