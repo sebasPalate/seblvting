@@ -1,26 +1,22 @@
 export const activities = [
   {
-    title: "Nuevos Lugares",
-    description: "Sistema para la JCI Ambato",
-    wordKeys: ["UX/UI Design"],
-    image: "/projects/Factx.jpg",
+    title: "Diseñador de Experiencias",
+    description: "Transformo ideas en soluciones funcionales.",
+    image: "/activities/desing.gif",
+  },
+  {
+    title: "Creatividad en Acción",
+    description: "La música inspira mi creatividad.",
+    image: "/activities/guitar.jpg",
   },
   {
     title: "Nuevos Lugares, Nuevas Historias",
-    description: "Sistema para la JCI Ambato",
-    wordKeys: ["UX/UI Design"],
-    image: "/projects/Factx.jpg",
+    description: "Exploro con amigos y familia.",
+    image: "/activities/adventure.gif",
   },
   {
-    title: "Nuevos Lugares, Nuevas Historias",
-    description: "Sistema para la JCI Ambato",
-    wordKeys: ["UX/UI Design"],
-    image: "/projects/Factx.jpg",
-  },
-  {
-    title: "Nuevos Lugares, Nuevas Historias",
-    description: "Sistema para la JCI Ambato",
-    wordKeys: ["UX/UI Design"],
-    image: "/projects/Factx.jpg",
+    title: "Momentos con Amigos",
+    description: "Disfruto creando recuerdos juntos.",
+    image: "/activities/friends.jpg",
   },
 ];

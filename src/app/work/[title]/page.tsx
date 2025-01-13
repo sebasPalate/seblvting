@@ -2,6 +2,7 @@ import Footer from "@/components/global/Footer";
 import { PlatformIcons } from "@/components/sections/projects/IconsDev";
 import { projects } from "@/data/projects";
 import Image from "next/image";
+import { SiGithub } from "react-icons/si";
 
 const NotFound = () => (
     <div className="mt-16 mx-4">
@@ -56,9 +57,10 @@ interface ProjectProps {
         description: string,
         technologies: string[],
     },
-    input: string
+    input: string,
+    githubUrl: string
 }
-const ProjectDetails = ({ title, description, reason, team, challenge, platform, input }: ProjectProps) => (
+const ProjectDetails = ({ title, description, reason, team, challenge, platform, input, githubUrl }: ProjectProps) => (
     <div>
         {/* Primera sección: Motivo y equipo */}
         <section className="flex my-20 mx-4 gap-12">
@@ -119,6 +121,25 @@ const ProjectDetails = ({ title, description, reason, team, challenge, platform,
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">{input}</p>
             </div>
         </section>
+
+        {/* Tercera sección: Proyecto */}
+        <section className="flex my-20 mx-4 gap-12">
+            {/* Bloque del desafío */}
+            <div className="w-1/5">
+                <span className="text-gray-400">Proyecto</span>
+            </div>
+            {/* Bloque de título y descripción */}
+            <div className="flex flex-col items-center w-2/3">
+                <div className="text-lg md:text-xl">
+
+                    <a href={githubUrl} target='_blank'>
+                        <SiGithub className="text-black text-6xl" />
+                    </a>
+
+
+                </div>
+            </div>
+        </section>
     </div>
 
 );
@@ -143,9 +164,10 @@ export default function Page({ params }: { params: { title: string } }) {
                     technologies: project.platform?.technologies || [],
                 }}
                 input={project.input || 'Aporte no disponible'}
+                githubUrl={project.githubUrl || 'Proyecto no disponible'}
                 reason={project.reason}
                 team={project.team}
-                title={project.title}
+                title={project.title}   
                 description={project.description}
                 detail={project.detail}
                 wordKeys={project.wordKeys}

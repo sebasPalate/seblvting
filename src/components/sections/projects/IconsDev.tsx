@@ -22,7 +22,7 @@ const techIcons: Record<string, JSX.Element> = {
 };
 
 export const PlatformIcons = ({ technologies }: { technologies: string[] }) => (
-    <div className="flex flex-wrap justify-center gap-5 p-5">
+    <div className="flex flex-wrap justify-center gap-5 p-10">
         {technologies.map((tech) => (
             <div key={tech} className="flex flex-col items-center">
                 {techIcons[tech] || (

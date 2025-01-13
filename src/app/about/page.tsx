@@ -263,7 +263,7 @@ export default function Page() {
 
                                 <CardFooter className="flex flex-col items-start mt-3 p-0 gap-1">
                                     <h2 className="text-md text-black uppercase">{activity.title}</h2>
-                                    <p className="text-sm text-gray-500">{activity.wordKeys.join(', ')}</p>
+                                    <p className="text-sm text-gray-500">{activity.description}</p>
                                 </CardFooter>
                             </Card>
                         </div>
