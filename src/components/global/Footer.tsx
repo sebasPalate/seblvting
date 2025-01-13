@@ -4,9 +4,9 @@ import LinkIconComponent from "@/components/ui/LinkIcon";
 export default function Footer() {
     return (
         <footer id="footer" className="bg-black px-4" >
-            <div className="flex flex-col mt-14">
+            <div className="flex flex-col">
                 {/* Top Content */}
-                <section className="flex flex-col md:flex-row gap-5 justify-between mb-14 md:mb-20">
+                <section className="flex flex-col md:flex-row gap-5 justify-between my-14 md:mb-20">
                     <div className="max-w-3xl sm:max-w-4xl">
                         <h4 className="text-gray-400 text-3xl sm:text-4xl md:text-5xl mb-5">
                             {/* Interested in working with me? */}
@@ -66,7 +66,7 @@ export default function Footer() {
                 <section className="flex flex-col md:flex-row mt-14 md:mt-28 mb-5 gap-2">
                     <p className="text-xs text-white">
                         {/* Copyright © 2025 Sebas.Palate. All rights reserved. */}
-                        Derechos de Autor © 2025 Sebas.Palate. Todos los derechos reservados.
+                        © Sebas.Palate 2025. Todos los derechos reservados.
                     </p>
                     <p className="text-xs text-gray-400">
                         {/* Development by Sebas.Palate | Inspired by Cris.Araújo */}
