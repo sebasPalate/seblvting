@@ -51,7 +51,7 @@ export default function Page({ params }: { params: { title: string } }) {
             </section>
 
             {/* Sección adicional con más información */}
-            <section className="flex mt-[10vh] mx-4 gap-10">
+            <section className="flex my-20 mx-4 gap-10">
 
                 <div className="flex flex-col max-w-60">
                     <span className="font-semibold">
