@@ -17,7 +17,7 @@ export default function Home() {
       {/* Hero Section */}
       <header id="hero-section" className="px-4">
         {/* Image */}
-        <div className="relative w-full h-[65vh] sm:h-[75vh] lg:h-[85vh]">
+        <div className="relative w-full h-[55vh] sm:h-[65vh] lg:h-[75vh]">
           <Image
             src="/assets/lvg.svg"
             alt="Imagen de portada de Sebas Palate"
@@ -28,8 +28,8 @@ export default function Home() {
         </div>
 
         {/* Title */}
-        <div className="w-full mb-8 text-center">
-          <h1 className="text-5xl sm:text-8xl lg:text-9xl font-semibold">
+        <div className="w-full mb-5 text-center">
+          <h1 className="text-[12vw] font-semibold">
             SEBAS.PALATE
           </h1>
         </div>
@@ -40,8 +40,8 @@ export default function Home() {
           <div className="flex flex-col gap-5 lg:flex-row justify-start">
             {sections.slice(0, 3).map((item, index) => (
               <div key={index} className="w-auto">
-                <h2 className="font-semibold text-lg sm:text-base text-gray-400">{item.title}</h2>
-                <p className="text-sm sm:text-sm">{item.content}</p>
+                <h2 className="font-semibold text-base sm:text-xl text-gray-400">{item.title}</h2>
+                <p className="text-sm sm:text-base">{item.content}</p>
               </div>
             ))}
           </div>
@@ -50,8 +50,8 @@ export default function Home() {
           <div className="flex flex-col gap-5 lg:flex-row justify-end">
             {sections.slice(3, 6).map((item, index) => (
               <div key={index} className="w-auto">
-                <h2 className="font-semibold text-lg sm:text-base text-gray-400">{item.title}</h2>
-                <p className="text-sm sm:text-sm">{item.content}</p>
+                <h2 className="font-semibold text-base sm:text-xl text-gray-400">{item.title}</h2>
+                <p className="text-sm sm:text-base">{item.content}</p>
               </div>
             ))}
           </div>
@@ -67,6 +67,7 @@ export default function Home() {
             fill={true}
             priority
             className="object-cover object-center"
+            unoptimized={true}
           />
           {/* Dark Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-60 z-20"></div>
@@ -82,16 +83,16 @@ export default function Home() {
 
       {/* Impacto y Experiencia */}
       <section id="impacto-experiencia" className="px-4">
-        <div className="max-w-3xl sm:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+        <div className="sm:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
           {/* Texto introductorio */}
-          <p className="text-4xl leading-tight sm:text-4xl md:text-5xl lg:text-5xl text-left mb-5 ">
+          <p className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl text-left mb-5 ">
             Levitar proyectos digitales con soluciones innovadoras, creando experiencias de usuario que transforman y elevan cada interacción.
           </p>
 
           {/* Números */}
           <div className="flex flex-col gap-10 sm:flex-row sm:justify-between font-medium lg:text-center pt-16">
             <div className="flex flex-col">
-              <div className="text-[10rem] sm:text-[9rem] md:text-[13rem] lg:text-[14rem] leading-none">
+              <div className="text-[15vh] sm:text-[18vw] leading-none">
                 +7
               </div>
 
@@ -99,7 +100,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col">
-              <p className="text-[10rem] sm:text-[9rem] md:text-[13rem] lg:text-[14rem] leading-none">
+              <p className="text-[15vh] sm:text-[18vw] leading-none">
                 •1
               </p>
               <p className="text-lg text-gray-500 xl:text-xl">Año/s de Experiencia</p>

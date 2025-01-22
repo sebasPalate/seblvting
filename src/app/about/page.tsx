@@ -1,7 +1,7 @@
 import Footer from "@/components/global/Footer";
 import { activities } from "@/data/activities";
-import { Card, CardBody, CardFooter } from "@nextui-org/card";
-import { Divider } from "@nextui-org/divider";
+import { Card, CardBody, CardFooter } from "@heroui/card";
+import { Divider } from "@heroui/divider";
 import Image from "next/image";
 
 export default function Page() {
@@ -68,7 +68,7 @@ export default function Page() {
                     <div className="flex flex-col gap-3 w-full">
                         <div className="md:w-1/2 md:ml-auto">
                             <div className="flex flex-col gap-2 my-3">
-                                <span className="text-base font-semibold">EEASA | SisDocx</span>
+                                <span className="text-base font-semibold">EEASA | Pasante</span>
                                 <p className="text-base">Desarrollador Frontend</p>
                             </div>
 
@@ -163,18 +163,32 @@ export default function Page() {
                     <div className="flex flex-col gap-3 w-full">
                         <div className="md:w-1/2 md:ml-auto">
                             <div className="flex flex-col gap-2 my-3">
-                                <span className="text-base font-semibold">Ingeniería de Software | Ingeniero</span>
+                                <span className="text-base font-semibold">Ingeniería de Software</span>
                                 <p className="text-base">Universidad Técnica de Ambato</p>
-                                <p className="text-xs">Desarrolando Proyecto de Titulación</p>
+                                <p className="text-xs">Desarrollando Proyecto de Titulación</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 className="text-3xl md:text-5xl mt-10">2025</h3>
+                    <Divider className="my-2" />
+
+                    <div className="flex flex-col gap-2 w-full">
+                        <div className="md:w-1/2 md:ml-auto">
+                            <div className="flex flex-col gap-2 my-3">
+                                <span className="text-base font-semibold">Nuevo Miembro Destacado 2024</span>
+                                <p className="text-base">Cámara Junior Internacional Capítulo Ambato</p>
+                                {/* <p className="text-xs">Contribución Destacada 2024</p> */}
                             </div>
 
-                            <Divider className="mt-3" />
+                            <Divider className="my-5" />
 
                             <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base font-semibold">Desarrollador Front-end</span>
                                 <p className="text-base">Coursea y Meta</p>
-                                <p className="text-xs">Concluyendo el Último Módulo</p>
+                                {/* <p className="text-xs">Uso de Herramientas para el Desarrollo Web</p> */}
                             </div>
+
                         </div>
                     </div>
 
@@ -193,7 +207,7 @@ export default function Page() {
 
                             <div className="flex flex-col gap-2 my-3">
                                 <span className="text-base font-semibold">LAL #2 | Miembro del Capítulo</span>
-                                <p className="text-base">JCI Ambato</p>
+                                <p className="text-base">Cámara Junior Internacional Capítulo Ambato</p>
                                 <p className="text-xs">Gestión del Proyectos, Finanzas, Comunicación Efectiva, Negociación y Resolución de Conflictos</p>
                             </div>
 
