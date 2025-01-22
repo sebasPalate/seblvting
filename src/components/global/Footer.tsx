@@ -18,10 +18,9 @@ export default function Footer() {
                         </h4>
                     </div>
 
-                    <div>
+                    <div className="flex flex-col gap-4">
                         <p className="text-gray-400 text-nowrap">1° 15&apos; 20.3&quot; S / 78° 37&apos; 26.3&quot; W</p>
                         <p className="text-white">
-                            {/* Remote from Ecuador */}
                             Remoto desde Ecuador
                         </p>
                     </div>

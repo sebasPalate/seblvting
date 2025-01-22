@@ -4,7 +4,7 @@ export const projects = [
     description: 
       "Factx es un sistema de facturación electrónica diseñado para optimizar y simplificar el proceso de emisión de facturas electrónicas en tiempo real. La herramienta proporciona una interfaz intuitiva para gestionar facturas de manera eficiente, minimizando errores humanos y mejorando la experiencia del usuario.",
     detail: "FullStack Project",
-    reason: "Proyecto académico de Gestión de Proyectos (2023)",
+    reason: "Proyecto Académico Grupal (2024)",
     team: [
       "Sebastián Palate (Desarrollador y Diseñador Principal)",
       "José Ojeda (Backend)"
@@ -124,18 +124,19 @@ export const projects = [
     imageBackground: "/projects/bg-sisdocx.webp",
     link: "/work/JCI-Ambato",
     challenge: {
-      title: "Crear una plataforma accesible y representativa",
+      title: "Diseñar una plataforma moderna y representativa",
       description:
-        "El desafío principal fue desarrollar una página web que reflejara la identidad de JCI Ambato, destacando su impacto en la comunidad, mientras se mantenía en un presupuesto limitado. El proyecto está actualmente en desarrollo."
+        "Desarrollar un sitio web que destacara por su diseño atractivo y funcionalidad, representando fielmente a una de las organizaciones más influyentes del centro del país. El objetivo principal es incrementar la visibilidad, ofreciendo al público general una forma accesible de conocer la organización y sus actividades."
     },
     platform: {
-      title: "Página oficial moderna y funcional",
+      title: "Página oficial optimizada y accesible",
       description:
-        "La página web está siendo desarrollada con tecnologías modernas como Next.js, TailwindCSS y Strapi, para garantizar un sitio rápido, accesible y fácil de gestionar. Estará disponible pronto.",
+        "La plataforma ha sido diseñada utilizando tecnologías modernas para asegurar una experiencia de usuario fluida, tiempos de carga rápidos, y una gestión eficiente del contenido. Su diseño responsivo garantiza que sea accesible desde cualquier dispositivo, alineándose con los objetivos de visibilidad y profesionalismo de la organización.",
       technologies: ["NextJS", "JavaScript", "Strapi", "TailwindCSS"]
     },
+    
     input:
-      "Actualmente, estoy trabajando en el diseño e implementación del frontend para garantizar una experiencia visual atractiva. Israel Teneda está colaborando en el desarrollo de funcionalidades adicionales e integraciones con Strapi.",
+      "Actualmente, estoy trabajando en el diseño e implementación del frontend para garantizar una experiencia visual atractiva. Israel Teneda está colaborando en el desarrollo de funcionalidades adicionales.",
     githubUrl: "https://github.com/israteneda/jciambato",
   },
   {
