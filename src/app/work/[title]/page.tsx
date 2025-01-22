@@ -1,8 +1,12 @@
+'use client';  // Indicar que esta página se renderiza en el cliente
+
 import Footer from "@/components/global/Footer";
 import { PlatformIcons } from "@/components/sections/projects/IconsDev";
 import { projects } from "@/data/projects";
 import Image from "next/image";
 import { SiGithub } from "react-icons/si";
+import { useParams } from "next/navigation";  // Importar useParams de Next.js
+
 
 const NotFound = () => (
     <div className="mt-16 mx-4">
@@ -12,19 +16,6 @@ const NotFound = () => (
 
 const ProjectBackground = ({ largeImage, smallImage, title }: { smallImage: string; largeImage: string; title: string }) => (
     <section className="relative h-screen">
-        {/* <Image
-            src={image}
-            alt={title}
-            fill
-            className="absolute inset-0 object-cover w-full h-full"
-            priority
-        />
-        <div className="relative z-10 h-full bg-black/50">
-            <div className="absolute bottom-0 left-0 ml-20 mb-20 text-white">
-                <span className="text-medium">Conoce a</span>
-                <h1 className="text-4xl md:text-7xl font-semibold text-white">{title}</h1>
-            </div>
-        </div> */}
         {/* Imagen grande para pantallas grandes */}
         <Image
             src={largeImage}
@@ -177,8 +168,11 @@ const ProjectDetails = ({ title, description, reason, team, challenge, platform,
 
 
 
-export default function Page({ params }: { params: { title: string } }) {
-    const project = projects.find((project) => project.title === params.title);
+export default function Page() {
+    const { title } = useParams();  // Usamos useParams aquí para obtener el título
+
+    // Buscar el proyecto correspondiente
+    const project = projects.find((project) => project.title === title);
 
     if (!project) return <NotFound />;
 
