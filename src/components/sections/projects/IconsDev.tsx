@@ -1,6 +1,8 @@
 import { DiReact, DiPython, DiJava, DiPostgresql, DiHtml5 } from "react-icons/di";
 import { SiTailwindcss, SiNextdotjs, SiSpringboot, SiPostman, SiPrisma, SiNextui, SiRedux, SiTypescript, SiJavascript, SiStrapi, SiApachetomcat, SiGooglecloud, SiJupyter, SiOpencv } from "react-icons/si";
 
+import type { JSX } from "react";
+
 const techIcons: Record<string, JSX.Element> = {
     React: <DiReact className="text-blue-500 text-6xl" />,
     TailwindCSS: <SiTailwindcss className="text-teal-400 text-6xl" />,

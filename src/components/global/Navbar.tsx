@@ -57,7 +57,7 @@ export default function NavbarComponent() {
     const pathname = usePathname();
 
     return (
-        <div className="fixed top-0 w-full z-50 justify-between" role="navigation">
+        <div className="fixed top-0 w-full z-50 justify-between p-5" role="navigation">
             <Navbar isBlurred={false} maxWidth="xl">
                 <NavbarContent justify="start">
                     <NavbarBrand>
