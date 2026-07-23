@@ -4,15 +4,18 @@ type UseMediaQueryOptions = {
   ssr?: boolean;
 };
 
+function getInitialMatches(query: string, ssr: boolean): boolean {
+  if (typeof window !== "undefined") {
+    return window.matchMedia(query).matches;
+  }
+  return ssr;
+}
+
 export function useMediaQuery(query: string, { ssr = false }: UseMediaQueryOptions = {}): boolean {
-  const [matches, setMatches] = useState(ssr);
+  const [matches, setMatches] = useState(() => getInitialMatches(query, ssr));
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-
     const mql = window.matchMedia(query);
-
-    setMatches(mql.matches);
 
     const handler = (event: MediaQueryListEvent) => {
       setMatches(event.matches);

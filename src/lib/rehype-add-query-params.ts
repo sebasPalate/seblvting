@@ -4,7 +4,7 @@ import { addQueryParams } from "@/utils/url";
 
 export function rehypeAddQueryParams(params: Record<string, string>) {
   return (tree: UnistTree) => {
-    visit(tree as any, (node: UnistNode) => {
+    visit(tree, (node: UnistNode) => {
       if (node.type !== "element" || node?.tagName !== "a" || !node?.properties?.href) {
         return;
       }

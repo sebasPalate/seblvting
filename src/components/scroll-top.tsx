@@ -13,7 +13,7 @@ export function ScrollTop({ className, ...props }: React.ComponentProps<"button"
   const [visible, setVisible] = useState(false);
   const [scrollDirection, setScrollDirection] = useState<"up" | "down">("down");
 
-  useMotionValueEvent(scrollY, "change", (latestValue: any) => {
+  useMotionValueEvent(scrollY, "change", (latestValue: number) => {
     setVisible(latestValue >= 400);
 
     const prev = scrollY.getPrevious() ?? 0;

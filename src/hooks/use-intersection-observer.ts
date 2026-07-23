@@ -15,7 +15,10 @@ export function useIntersectionObserver(
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   const onceRef = useRef(once);
-  onceRef.current = once;
+
+  useEffect(() => {
+    onceRef.current = once;
+  }, [once]);
 
   useEffect(() => {
     const element = elementRef.current;
