@@ -143,6 +143,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "education",
     companyName: "Education",
+    companyLogo: "/images/experience/uta.png",
     positions: [
       {
         id: "c47f5903-88ae-4512-8a50-0b91b0cf99b6",
