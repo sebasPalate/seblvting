@@ -42,7 +42,6 @@ export const USER: User = {
 - **Mission:** Creating software that delivers exceptional user experiences while constantly adapting to stay at the forefront of technology.
 `,
   avatar: "/images/me.jpg",
-  ogImage: "/images/og-image-light.png",
   keywords: [
     "sebas palate",
     "sebastián palate",
