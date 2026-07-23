@@ -15,11 +15,7 @@ import { ExperienceIcon } from "./experience-position-icon";
 import { ExperiencePosition } from "@/features/profile/types/experiences";
 import { Prose } from "@/components/ui/typography";
 
-export function ExperiencePositionItem({
-  position,
-}: {
-  position: ExperiencePosition;
-}) {
+export function ExperiencePositionItem({ position }: { position: ExperiencePosition }) {
   const { start, end } = position.employmentPeriod;
   const isOngoing = !end;
 
@@ -44,14 +40,9 @@ export function ExperiencePositionItem({
               <ExperienceIcon className="size-4" icon={position.icon} />
             </div>
 
-            <h4 className="flex-1 font-medium text-balance">
-              {position.title}
-            </h4>
+            <h4 className="flex-1 font-medium text-balance">{position.title}</h4>
 
-            <div
-              className="shrink-0 text-muted-foreground [&_svg]:size-4"
-              aria-hidden
-            >
+            <div className="shrink-0 text-muted-foreground [&_svg]:size-4" aria-hidden>
               <CollapsibleChevronsIcon />
             </div>
           </div>
@@ -64,10 +55,7 @@ export function ExperiencePositionItem({
                   <dd>{position.employmentType}</dd>
                 </dl>
 
-                <Separator
-                  className="data-[orientation=vertical]:h-4"
-                  orientation="vertical"
-                />
+                <Separator className="data-[orientation=vertical]:h-4" orientation="vertical" />
               </>
             )}
 
@@ -78,10 +66,7 @@ export function ExperiencePositionItem({
                 <span className="font-mono">—</span>
                 {isOngoing ? (
                   <>
-                    <InfinityIcon
-                      className="size-4.5 translate-y-[0.5px]"
-                      aria-hidden
-                    />
+                    <InfinityIcon className="size-4.5 translate-y-[0.5px]" aria-hidden />
                     <span className="sr-only">Present</span>
                   </>
                 ) : (

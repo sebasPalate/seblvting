@@ -28,13 +28,11 @@ export default function InternalProjectPage() {
             <span className="font-medium">Confidential Project</span>
           </div>
 
-          <h1 className="text-4xl font-bold tracking-tight">
-            Internal Client Project
-          </h1>
+          <h1 className="text-4xl font-bold tracking-tight">Internal Client Project</h1>
 
           <p className="text-lg text-muted-foreground">
-            This project was developed for internal use by my client under a
-            non-disclosure agreement.
+            This project was developed for internal use by my client under a non-disclosure
+            agreement.
           </p>
         </div>
 
@@ -44,15 +42,12 @@ export default function InternalProjectPage() {
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <Lock className="h-5 w-5 text-muted-foreground" />
-              <h2 className="text-xl font-semibold">
-                Why can&apos;t I share this?
-              </h2>
+              <h2 className="text-xl font-semibold">Why can&apos;t I share this?</h2>
             </div>
             <p className="leading-relaxed text-muted-foreground">
-              This project is part of the client&apos;s internal infrastructure
-              and operations. Due to confidentiality agreements and privacy
-              requirements, I cannot provide access to the live application or
-              share detailed implementation specifics.
+              This project is part of the client&apos;s internal infrastructure and operations. Due
+              to confidentiality agreements and privacy requirements, I cannot provide access to the
+              live application or share detailed implementation specifics.
             </p>
           </div>
 
@@ -65,9 +60,9 @@ export default function InternalProjectPage() {
               <h2 className="text-xl font-semibold">What I can tell you</h2>
             </div>
             <p className="leading-relaxed text-muted-foreground">
-              While I respect the confidentiality of the project, I can discuss
-              the technical challenges I solved, the technologies used, and the
-              impact of my work on the client&apos;s business operations.
+              While I respect the confidentiality of the project, I can discuss the technical
+              challenges I solved, the technologies used, and the impact of my work on the
+              client&apos;s business operations.
             </p>
           </div>
 
@@ -80,10 +75,9 @@ export default function InternalProjectPage() {
               <h2 className="text-xl font-semibold">Professional commitment</h2>
             </div>
             <p className="leading-relaxed text-muted-foreground">
-              Protecting client confidentiality is a fundamental part of
-              professional software development. I take NDAs and privacy
-              agreements seriously, ensuring all sensitive information remains
-              secure.
+              Protecting client confidentiality is a fundamental part of professional software
+              development. I take NDAs and privacy agreements seriously, ensuring all sensitive
+              information remains secure.
             </p>
           </div>
         </div>
@@ -92,8 +86,8 @@ export default function InternalProjectPage() {
         <div className="rounded-lg border bg-muted/50 p-6 text-center">
           <h3 className="mb-2 text-lg font-semibold">Want to know more?</h3>
           <p className="mb-4 text-sm text-muted-foreground">
-            I&apos;d be happy to discuss the technical aspects of this project
-            and how my skills can benefit your team.
+            I&apos;d be happy to discuss the technical aspects of this project and how my skills can
+            benefit your team.
           </p>
           <Link
             href="/#contact"

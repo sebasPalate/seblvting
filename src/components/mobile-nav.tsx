@@ -12,23 +12,14 @@ import {
 import { cn } from "@/lib/utils";
 import type { NavItem } from "@/types/nav";
 
-export function MobileNav({
-  items,
-  className,
-}: {
-  items: NavItem[];
-  className?: string;
-}) {
+export function MobileNav({ items, className }: { items: NavItem[]; className?: string }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
           size="icon"
-          className={cn(
-            "group/toggle flex flex-col gap-1 data-[state=open]:bg-accent",
-            className,
-          )}
+          className={cn("group/toggle flex flex-col gap-1 data-[state=open]:bg-accent", className)}
         >
           <span className="flex h-0.5 w-4 transform rounded-[1px] bg-foreground transition-transform group-data-[state=open]/toggle:translate-y-[3px] group-data-[state=open]/toggle:rotate-45" />
           <span className="flex h-0.5 w-4 transform rounded-[1px] bg-foreground transition-transform group-data-[state=open]/toggle:translate-y-[-3px] group-data-[state=open]/toggle:-rotate-45" />

@@ -2,12 +2,7 @@
 
 import { MailIcon } from "lucide-react";
 
-import {
-  IntroItem,
-  IntroItemContent,
-  IntroItemIcon,
-  IntroItemLink,
-} from "./intro-item";
+import { IntroItem, IntroItemContent, IntroItemIcon, IntroItemLink } from "./intro-item";
 import { useIsClient } from "@/hooks/use-is-client";
 import { decodeEmail } from "@/lib/string";
 
@@ -28,9 +23,7 @@ export function EmailItem({ email }: EmailItemProps) {
       <IntroItemContent>
         <IntroItemLink
           href={isClient ? `mailto:${emailDecoded}` : "#"}
-          aria-label={
-            isClient ? `Send email to ${emailDecoded}` : "Email address"
-          }
+          aria-label={isClient ? `Send email to ${emailDecoded}` : "Email address"}
         >
           {isClient ? emailDecoded : "[Email protected]"}
         </IntroItemLink>

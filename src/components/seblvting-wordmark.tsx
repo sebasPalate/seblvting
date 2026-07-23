@@ -1,11 +1,6 @@
 export function SeblvtingWordmark(props: React.ComponentProps<"svg">) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1279 350"
-      fill="none"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279 350" fill="none" {...props}>
       <path
         d="M153.08 68.5C108.88 141.897 106.387 142.883 183 148.551C92.3334 158.901 103.44 152.494 42.0134 238.5C88.2534 157.669 99.36 155.697 13 148.551C114.24 146.91 109.56 121.977 153.08 68.5Z"
         fill="currentColor"

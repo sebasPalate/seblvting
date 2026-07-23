@@ -10,7 +10,7 @@ export async function getGitHubContributions() {
     `https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}?y=last`,
     {
       next: { revalidate: 86400 }, // Cache for 1 day (86400 seconds)
-    }
+    },
   );
   const data = (await res.json()) as GitHubContributionsResponse;
   return data.contributions;

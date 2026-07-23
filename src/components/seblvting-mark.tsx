@@ -3,12 +3,7 @@ const MARK_PATH =
 
 export function SeblvtingMark(props: React.ComponentProps<"svg">) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 376 346"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 376 346" {...props}>
       <path d={MARK_PATH} fill="currentColor" />
     </svg>
   );

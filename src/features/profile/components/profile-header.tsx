@@ -2,11 +2,7 @@ import { USER } from "@/features/profile/data/user";
 import { VerifiedIcon } from "@/features/profile/components/verified-icon";
 import { cn } from "@/lib/utils";
 import { FlipSentences } from "@/registry/flip-sentences";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 export function ProfileHeader() {
   return (

@@ -23,8 +23,7 @@ export const MAIN_NAV: NavItem[] = [
 
 export const GITHUB_USERNAME = "sebasPalate";
 export const SOURCE_CODE_GITHUB_REPO = "sebasPalate/seblvting";
-export const SOURCE_CODE_GITHUB_URL =
-  "https://github.com/sebasPalate/seblvting";
+export const SOURCE_CODE_GITHUB_URL = "https://github.com/sebasPalate/seblvting";
 
 export const UTM_PARAMS = {
   utm_source: "https://seblvting.me",

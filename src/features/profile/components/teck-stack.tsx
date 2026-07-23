@@ -3,17 +3,8 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 import { TECH_STACK } from "@/features/profile/data/tech-stack";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import {
-  Panel,
-  PanelContent,
-  PanelHeader,
-  PanelTitle,
-} from "@/features/profile/components/panel";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { Panel, PanelContent, PanelHeader, PanelTitle } from "@/features/profile/components/panel";
 
 export function TeckStack() {
   return (

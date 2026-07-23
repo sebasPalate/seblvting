@@ -9,10 +9,7 @@ import {
 
 import type { ExperiencePositionIcon } from "../../types/experiences";
 
-const iconMap: Record<
-  ExperiencePositionIcon,
-  React.ComponentType<LucideProps>
-> = {
+const iconMap: Record<ExperiencePositionIcon, React.ComponentType<LucideProps>> = {
   code: CodeXmlIcon,
   design: DraftingCompassIcon,
   education: GraduationCapIcon,

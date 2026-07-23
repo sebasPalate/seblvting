@@ -169,16 +169,12 @@ export function CommandMenu() {
           />
         </svg>
 
-        <span className="font-sans text-sm/4 font-medium sm:hidden">
-          Search
-        </span>
+        <span className="font-sans text-sm/4 font-medium sm:hidden">Search</span>
 
         <CommandMenuKbd className="hidden tracking-wider sm:in-[.os-macos_&]:flex">
           ⌘K
         </CommandMenuKbd>
-        <CommandMenuKbd className="hidden sm:not-[.os-macos_&]:flex">
-          Ctrl K
-        </CommandMenuKbd>
+        <CommandMenuKbd className="hidden sm:not-[.os-macos_&]:flex">Ctrl K</CommandMenuKbd>
       </button>
 
       <CommandDialog open={open} onOpenChange={setOpen}>
@@ -187,11 +183,7 @@ export function CommandMenu() {
         <CommandList className="min-h-80 supports-timeline-scroll:scroll-fade-y">
           <CommandEmpty>No results found.</CommandEmpty>
 
-          <CommandLinkGroup
-            heading="Menu"
-            links={MENU_LINKS}
-            onLinkSelect={handleOpenLink}
-          />
+          <CommandLinkGroup heading="Menu" links={MENU_LINKS} onLinkSelect={handleOpenLink} />
 
           <CommandSeparator />
 
@@ -227,9 +219,7 @@ export function CommandMenu() {
             <CommandItem
               onSelect={() => {
                 handleCopyText(
-                  getWordmarkSVG(
-                    resolvedTheme === "light" ? "#09090b" : "#ffffff",
-                  ),
+                  getWordmarkSVG(resolvedTheme === "light" ? "#09090b" : "#ffffff"),
                   "Copied Logotype as SVG",
                 );
               }}
@@ -242,24 +232,15 @@ export function CommandMenu() {
           <CommandSeparator />
 
           <CommandGroup heading="Theme">
-            <CommandItem
-              keywords={["theme"]}
-              onSelect={createThemeHandler("light")}
-            >
+            <CommandItem keywords={["theme"]} onSelect={createThemeHandler("light")}>
               <SunIcon />
               Light
             </CommandItem>
-            <CommandItem
-              keywords={["theme"]}
-              onSelect={createThemeHandler("dark")}
-            >
+            <CommandItem keywords={["theme"]} onSelect={createThemeHandler("dark")}>
               <MoonStarIcon />
               Dark
             </CommandItem>
-            <CommandItem
-              keywords={["theme"]}
-              onSelect={createThemeHandler("system")}
-            >
+            <CommandItem keywords={["theme"]} onSelect={createThemeHandler("system")}>
               <Icons.contrast />
               Auto
             </CommandItem>
@@ -371,10 +352,7 @@ function CommandMenuFooter() {
           <CommandMenuKbd>
             <CornerDownLeftIcon />
           </CommandMenuKbd>
-          <Separator
-            orientation="vertical"
-            className="data-[orientation=vertical]:h-4"
-          />
+          <Separator orientation="vertical" className="data-[orientation=vertical]:h-4" />
           <span className="text-muted-foreground">Exit</span>
           <CommandMenuKbd>Esc</CommandMenuKbd>
         </div>

@@ -8,10 +8,7 @@ import { SeblvtingMark } from "./seblvting-mark";
 export function NotFound({ className }: { className?: string }) {
   return (
     <div
-      className={cn(
-        "flex h-[calc(100svh-5.5rem)] flex-col items-center justify-center",
-        className,
-      )}
+      className={cn("flex h-[calc(100svh-5.5rem)] flex-col items-center justify-center", className)}
     >
       <SeblvtingMark className="h-8 w-auto sm:h-24" />
 

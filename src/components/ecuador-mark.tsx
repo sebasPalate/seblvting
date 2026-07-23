@@ -1,11 +1,6 @@
 export function EcuadorMark(props: React.ComponentProps<"svg">) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 512 512"
-      fill="none"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" {...props}>
       <path
         d="M0 256C0 114.616 114.616 0 256 0C397.384 0 512 114.616 512 256L256 278.261L0 256Z"
         fill="#FFDA44"

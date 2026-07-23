@@ -17,11 +17,7 @@ function ThemeMetaColorSync() {
   const { setMetaColor } = useMetaColor();
 
   useEffect(() => {
-    setMetaColor(
-      resolvedTheme === "dark"
-        ? META_THEME_COLORS.dark
-        : META_THEME_COLORS.light
-    );
+    setMetaColor(resolvedTheme === "dark" ? META_THEME_COLORS.dark : META_THEME_COLORS.light);
   }, [resolvedTheme, setMetaColor]);
 
   return null;

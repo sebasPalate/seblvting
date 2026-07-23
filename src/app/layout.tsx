@@ -120,10 +120,7 @@ export default function RootLayout({ children }: Props) {
       suppressHydrationWarning
     >
       <head>
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{ __html: metaThemeScript }}
-        />
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: metaThemeScript }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

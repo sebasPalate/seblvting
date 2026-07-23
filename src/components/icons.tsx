@@ -124,10 +124,7 @@ export const Icons = {
   ),
   accenture: (props: IconProps) => (
     <svg viewBox="0 0 24 24" {...props}>
-      <path
-        d="m3 16.125 11.093-4.105L3 7.71V2l19 7.61v4.735L3 22v-5.875Z"
-        fill="currentColor"
-      />
+      <path d="m3 16.125 11.093-4.105L3 7.71V2l19 7.61v4.735L3 22v-5.875Z" fill="currentColor" />
     </svg>
     // <svg viewBox="0 0 24 24" {...props}>
     //   <path

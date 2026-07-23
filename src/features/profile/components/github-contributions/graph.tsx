@@ -12,18 +12,10 @@ import {
   ContributionGraphLegend,
   ContributionGraphTotalCount,
 } from "@/components/kibo-ui/contribution-graph";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { GITHUB_USERNAME } from "@/config/site";
 
-export function GitHubContributionGraph({
-  contributions,
-}: {
-  contributions: Promise<Activity[]>;
-}) {
+export function GitHubContributionGraph({ contributions }: { contributions: Promise<Activity[]> }) {
   const data = use(contributions);
 
   return (
@@ -34,10 +26,7 @@ export function GitHubContributionGraph({
       blockMargin={3}
       blockRadius={0}
     >
-      <ContributionGraphCalendar
-        className="no-scrollbar px-2"
-        title="GitHub Contributions"
-      >
+      <ContributionGraphCalendar className="no-scrollbar px-2" title="GitHub Contributions">
         {({ activity, dayIndex, weekIndex }) => (
           <Tooltip>
             <TooltipTrigger asChild>
@@ -52,8 +41,8 @@ export function GitHubContributionGraph({
 
             <TooltipContent className="font-sans" sideOffset={0}>
               <p>
-                {activity.count} contribution{activity.count > 1 ? "s" : null}{" "}
-                on {dayjs(activity.date).format("DD.MM.YYYY")}
+                {activity.count} contribution{activity.count > 1 ? "s" : null} on{" "}
+                {dayjs(activity.date).format("DD.MM.YYYY")}
               </p>
             </TooltipContent>
           </Tooltip>
@@ -73,11 +62,7 @@ export function GitHubContributionGraph({
               >
                 GitHub
               </a>
-              <span className="text-muted-foreground/70">
-                {" "}
-                and 1,000+ on private client repos
-              </span>
-              .
+              <span className="text-muted-foreground/70"> and 1,000+ on private client repos</span>.
             </div>
           )}
         </ContributionGraphTotalCount>

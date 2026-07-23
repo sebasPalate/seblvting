@@ -29,7 +29,7 @@ function Prose({
         "prose-blockquote:border-s-border prose-blockquote:[&_p:first-of-type]:before:content-none prose-blockquote:[&_p:last-of-type]:after:content-none",
         "prose-ul:list-disc prose-ul:pl-6 prose-ol:list-decimal prose-ol:pl-6",
         "prose-li:marker:text-foreground",
-        className
+        className,
       )}
       {...props}
     />
@@ -43,9 +43,8 @@ function Code({ className, ...props }: React.ComponentProps<"code">) {
     <code
       data-slot={isCodeBlock ? "code-block" : "code-inline"}
       className={cn(
-        !isCodeBlock &&
-          "not-prose rounded-md border bg-muted/50 px-1.5 py-0.5 font-mono text-sm",
-        className
+        !isCodeBlock && "not-prose rounded-md border bg-muted/50 px-1.5 py-0.5 font-mono text-sm",
+        className,
       )}
       {...props}
     />
@@ -69,10 +68,7 @@ function Heading<T extends HeadingTypes = "h1">({
   }
 
   return (
-    <Comp
-      className={cn("flex flex-row items-center gap-2", className)}
-      {...props}
-    >
+    <Comp className={cn("flex flex-row items-center gap-2", className)} {...props}>
       <a href={`#${props.id}`} className="peer not-prose">
         {props.children}
       </a>

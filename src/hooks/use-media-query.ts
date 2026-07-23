@@ -4,10 +4,7 @@ type UseMediaQueryOptions = {
   ssr?: boolean;
 };
 
-export function useMediaQuery(
-  query: string,
-  { ssr = false }: UseMediaQueryOptions = {},
-): boolean {
+export function useMediaQuery(query: string, { ssr = false }: UseMediaQueryOptions = {}): boolean {
   const [matches, setMatches] = useState(ssr);
 
   useEffect(() => {

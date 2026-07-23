@@ -22,48 +22,42 @@ export const TECH_STACK: TechStack[] = [
     title: "Python",
     href: "https://www.python.org/",
     categories: ["Language"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   {
     key: "html5",
     title: "HTML5",
     href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     categories: ["Language"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },
   {
     key: "css3",
     title: "CSS3",
     href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     categories: ["Language"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
   {
     key: "graphql",
     title: "GraphQL",
     href: "https://graphql.org/",
     categories: ["Language"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
   },
   {
     key: "nodejs",
     title: "Node.js",
     href: "https://nodejs.org",
     categories: ["Runtime Environment"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
   {
     key: "markdown",
     title: "Markdown",
     href: "https://www.markdownguide.org/",
     categories: ["Language"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
     theme: true,
   },
   {
@@ -71,8 +65,7 @@ export const TECH_STACK: TechStack[] = [
     title: "React",
     href: "https://react.dev/",
     categories: ["Framework", "Library"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
     key: "expressjs",
@@ -88,8 +81,7 @@ export const TECH_STACK: TechStack[] = [
     title: "Next.js",
     href: "https://nextjs.org/",
     categories: ["Framework", "Library"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     theme: true,
   },
 
@@ -98,32 +90,28 @@ export const TECH_STACK: TechStack[] = [
     title: "NestJS",
     href: "https://nestjs.com/",
     categories: ["Framework", "Library"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
   },
   {
     key: "electron",
     title: "Electron",
     href: "https://www.electronjs.org/",
     categories: ["Framework", "Library"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
   },
   {
     key: "bun",
     title: "Bun",
     href: "https://bun.sh/",
     categories: ["Runtime Environment"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bun/bun-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bun/bun-original.svg",
   },
   {
     key: "react-native",
     title: "React Native",
     href: "https://reactnative.dev/",
     categories: ["Framework", "Library"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
 
   {
@@ -131,8 +119,7 @@ export const TECH_STACK: TechStack[] = [
     title: "Expo",
     href: "https://expo.dev/",
     categories: ["Framework", "Library"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
     theme: true,
   },
   {
@@ -140,16 +127,14 @@ export const TECH_STACK: TechStack[] = [
     title: "Redux",
     href: "https://redux.js.org/",
     categories: ["Framework", "Library"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
   },
   {
     key: "wordpress",
     title: "WordPress",
     href: "https://wordpress.org/",
     categories: ["Framework", "Library"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
     theme: true,
   },
   {
@@ -157,8 +142,7 @@ export const TECH_STACK: TechStack[] = [
     title: "Pandas",
     href: "https://pandas.pydata.org/",
     categories: ["Framework", "Library"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
     theme: true,
   },
   {
@@ -207,24 +191,21 @@ export const TECH_STACK: TechStack[] = [
     title: "Git",
     href: "https://git-scm.com/",
     categories: ["Version Control"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
   {
     key: "docker",
     title: "Docker",
     href: "https://www.docker.com/",
     categories: ["Containerization"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
   },
   {
     key: "mysql",
     title: "MySQL",
     href: "https://www.mysql.com/",
     categories: ["Database"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
   {
     key: "postgres",
@@ -239,32 +220,28 @@ export const TECH_STACK: TechStack[] = [
     title: "MongoDB",
     href: "https://www.mongodb.com/",
     categories: ["Database"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
     key: "sqlite",
     title: "SQLite",
     href: "https://www.sqlite.org/",
     categories: ["Database"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
   },
   {
     key: "redis",
     title: "Redis",
     href: "https://redis.io/",
     categories: ["Database"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
   },
   {
     key: "prisma",
     title: "Prisma",
     href: "https://www.prisma.io/",
     categories: ["Database"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
   },
   {
     key: "cloudinary",
@@ -279,8 +256,7 @@ export const TECH_STACK: TechStack[] = [
     title: "Figma",
     href: "https://www.figma.com/",
     categories: ["Tools", "Design"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
   {
     key: "chatgpt",

@@ -11,10 +11,7 @@ export function Markdown(props: React.ComponentProps<typeof MarkdownAsync>) {
       remarkPlugins={[remarkGfm]}
       rehypePlugins={[
         rehypeRaw,
-        [
-          rehypeExternalLinks,
-          { target: "_blank", rel: "nofollow noopener noreferrer" },
-        ],
+        [rehypeExternalLinks, { target: "_blank", rel: "nofollow noopener noreferrer" }],
         [rehypeAddQueryParams, UTM_PARAMS],
       ]}
       {...props}

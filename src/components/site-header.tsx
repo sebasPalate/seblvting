@@ -7,9 +7,7 @@ import { SiteHeaderWrapper } from "./site-header-wrapper";
 import { SiteHeaderMark } from "./site-header-mark";
 import { ToggleTheme } from "./toggle-theme";
 
-const MobileNav = dynamic(() =>
-  import("@/components/mobile-nav").then((mod) => mod.MobileNav),
-);
+const MobileNav = dynamic(() => import("@/components/mobile-nav").then((mod) => mod.MobileNav));
 
 const CommandMenu = dynamic(() =>
   import("@/components/command-menu").then((mod) => mod.CommandMenu),

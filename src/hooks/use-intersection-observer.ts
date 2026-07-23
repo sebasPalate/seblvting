@@ -10,12 +10,7 @@ type UseIntersectionObserverOptions = {
 
 export function useIntersectionObserver(
   elementRef: RefObject<Element | null>,
-  {
-    threshold = 0,
-    rootMargin = "0px",
-    root,
-    once = false,
-  }: UseIntersectionObserverOptions = {},
+  { threshold = 0, rootMargin = "0px", root, once = false }: UseIntersectionObserverOptions = {},
 ): boolean {
   const [isIntersecting, setIsIntersecting] = useState(false);
 

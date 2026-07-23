@@ -11,8 +11,7 @@ export function useSound(url: string) {
 
       const AudioContextClass =
         window.AudioContext ||
-        (window as unknown as { webkitAudioContext: typeof AudioContext })
-          .webkitAudioContext;
+        (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
 
       if (!AudioContextClass) {
         console.warn("Web Audio API is not supported in this browser.");

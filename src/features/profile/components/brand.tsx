@@ -12,9 +12,7 @@ export function Brand() {
       <div>
         <div className="grid grid-cols-[2rem_1fr]">
           <div className="flex h-28 items-center justify-center border-r border-dashed border-edge bg-background">
-            <span className="rotate-270 text-sm text-muted-foreground select-none">
-              Mark
-            </span>
+            <span className="rotate-270 text-sm text-muted-foreground select-none">Mark</span>
           </div>
 
           <div className="screen-line-after flex items-center justify-center pr-8 after:z-1">
@@ -22,9 +20,7 @@ export function Brand() {
           </div>
 
           <div className="flex h-28 items-center justify-center border-r border-dashed border-edge bg-background">
-            <span className="rotate-270 text-sm text-muted-foreground select-none">
-              Logotype
-            </span>
+            <span className="rotate-270 text-sm text-muted-foreground select-none">Logotype</span>
           </div>
 
           <div className="screen-line-after flex items-center justify-center pr-8 after:z-1">

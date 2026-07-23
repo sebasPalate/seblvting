@@ -1,10 +1,5 @@
 import { Markdown } from "@/components/markdown";
-import {
-  Panel,
-  PanelContent,
-  PanelHeader,
-  PanelTitle,
-} from "@/features/profile/components/panel";
+import { Panel, PanelContent, PanelHeader, PanelTitle } from "@/features/profile/components/panel";
 import { Prose } from "@/components/ui/typography";
 import { USER } from "@/features/profile/data/user";
 

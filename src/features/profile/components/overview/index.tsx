@@ -1,12 +1,7 @@
 import { GlobeIcon, MapPinIcon, MarsIcon, VenusIcon } from "lucide-react";
 import { CurrentLocalTimeItem } from "./current-local-time-item";
 import { EmailItem } from "./email-item";
-import {
-  IntroItem,
-  IntroItemContent,
-  IntroItemIcon,
-  IntroItemLink,
-} from "./intro-item";
+import { IntroItem, IntroItemContent, IntroItemIcon, IntroItemLink } from "./intro-item";
 import { JobItem } from "./job-item";
 import { PhoneItem } from "./phone-item";
 import { USER } from "@/features/profile/data/user";
@@ -41,9 +36,7 @@ export function Overview() {
           </IntroItem>
 
           <IntroItem>
-            <IntroItemIcon>
-              {USER.gender === "male" ? <MarsIcon /> : <VenusIcon />}
-            </IntroItemIcon>
+            <IntroItemIcon>{USER.gender === "male" ? <MarsIcon /> : <VenusIcon />}</IntroItemIcon>
             <IntroItemContent aria-label={`Pronouns: ${USER.pronouns}`}>
               {USER.pronouns}
             </IntroItemContent>

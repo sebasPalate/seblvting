@@ -7,10 +7,7 @@ import { Button } from "@/components/ui/button";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { ArrowUpIcon } from "lucide-react";
 
-export function ScrollTop({
-  className,
-  ...props
-}: React.ComponentProps<"button">) {
+export function ScrollTop({ className, ...props }: React.ComponentProps<"button">) {
   const { scrollY } = useScroll();
 
   const [visible, setVisible] = useState(false);

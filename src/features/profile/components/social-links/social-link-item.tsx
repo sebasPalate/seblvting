@@ -6,7 +6,7 @@ import { SocialLink } from "@/features/profile/types/social-links";
 import { Icons } from "@/components/icons";
 
 const BRAND_SOCIAL_ICONS: Record<string, keyof typeof Icons> = {
-  "github": "github",
+  github: "github",
 } as const;
 
 function isBrandIcon(url: string): keyof typeof Icons | null {
@@ -16,13 +16,7 @@ function isBrandIcon(url: string): keyof typeof Icons | null {
   return null;
 }
 
-export function SocialLinkItem({
-  icon,
-  title,
-  description,
-  href,
-  padding,
-}: SocialLink) {
+export function SocialLinkItem({ icon, title, description, href, padding }: SocialLink) {
   const brandIcon = isBrandIcon(icon);
   const IconComponent = brandIcon ? Icons[brandIcon] : null;
 
@@ -59,9 +53,7 @@ export function SocialLinkItem({
           {title}
         </h3>
 
-        {description && (
-          <p className="text-sm text-muted-foreground">{description}</p>
-        )}
+        {description && <p className="text-sm text-muted-foreground">{description}</p>}
       </div>
 
       <ArrowUpRightIcon className="size-4 text-muted-foreground" />
