@@ -15,8 +15,8 @@ export const USER: User = {
     "UX/UI Designer",
   ],
   address: "Ambato, Ecuador",
-  phoneNumber: "KzU5Mzk5NTE0NTM3OA==", // E.164 format, base64 encoded
-  email: "c2ViYXMucGFsYXRlMTFAZ21haWwuY29t", // base64 encoded
+  phoneNumber: "KzU5Mzk5NTE0NTM3OA==", // E.164 format, base64-obfuscated (NOT encryption — trivially reversible)
+  email: "c2ViYXMucGFsYXRlMTFAZ21haWwuY29t", // base64-obfuscated against basic scraping (NOT encryption — trivially reversible)
   website: "https://seblvting.vercel.app",
   jobTitle: "Fullstack Developer",
   jobs: [
@@ -25,21 +25,13 @@ export const USER: User = {
       company: "Tenpisoft",
       website: "https://tenpisoft.com",
     },
-    {
-      title: "Founder",
-      company: "Levting",
-      website: "/internal-project",
-    },
   ],
   about: `
-- **Fullstack Developer** with **2+ years of experience** building scalable backend systems and modern web applications in real-world environments.
-- Experience in **Next.js**, **Angular**, **Django** and **Springboot**; creating scalable web applications for clients, contributing to the development of functionalities, system scalability and production-ready implementations within agile teams.
-- Believe in modern, efficient, and scalable software. That's why I continually delve into DevOps, automation, and explore the potential of Artificial Intelligence, seeking to close the entire cycle: from idea and design to intelligent deployment.
-- Creator of [SisDocx](/internal-project/sisdocx): modern document management system
-  - Built with  **Java / Spring Boot**, **Angular**, **Oracle** and **Hibernate**.
-  - Document management (minutes, policies, technical reports), document tracking, and delivery status monitoring under distributed quality processes for the electrical sector.
-- **Passionate** about exploring new technologies and turning ideas into reality through polished, production-ready projects. Currently exploring **System Design** and aiming to venture into **AI**.
-- **Mission:** Creating software that delivers exceptional user experiences while constantly adapting to stay at the forefront of technology.
+- **Fullstack Developer** with **1+ year of experience** building scalable backend systems and production web applications.
+- Work with **Next.js**, **Angular**, **Django** and **Spring Boot**, shipping features, system scalability, and production-ready implementations within agile teams.
+- Creator of [SisDocx](/internal-project): a document management system built with **Java / Spring Boot**, **Angular**, **Oracle** and **Hibernate**.
+  - Handles document management (minutes, policies, technical reports), document tracking, and delivery status monitoring under distributed quality processes for the electrical sector.
+- Currently deepening **System Design** and **AI** — closing the loop from idea to intelligent deployment, because that's the actual problem worth solving.
 `,
   avatar: "/images/me.jpg",
   keywords: [

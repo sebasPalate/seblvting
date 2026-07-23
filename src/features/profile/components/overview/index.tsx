@@ -26,12 +26,6 @@ export function Overview() {
         />
 
         <div className="grid gap-x-12 gap-y-2.5 sm:grid-cols-2">
-          {/* <JobItem
-            title={USER.jobs[1].title}
-            company={USER.jobs[1].company}
-            website={USER.jobs[1].website}
-          /> */}
-
           <IntroItem>
             <IntroItemIcon>
               <MapPinIcon />

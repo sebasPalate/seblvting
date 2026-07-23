@@ -18,9 +18,7 @@ export const EXPERIENCES: Experience[] = [
 - Build and optimize backend systems and APIs using Next.js, Django, and Supabase.
 - Design and implement scalable data models and workflows, analyzing database structures to support evolving system requirements.
 - Deploy and manage development environments using Docker, ensuring consistency across local and production setups.
-- Contribute to system scalability and reliability by evaluating architectural decisions and adapting to new requirements.
-- Collaborate with cross-functional teams in a remote environment.
-- Optimize application performance and ensure code quality.`,
+- Design and enforce Row-Level Security (RLS) policies in Supabase, securing data access across client projects and shaping how the database is consumed.`,
         skills: [
           "React.js",
           "Next.js",
@@ -117,38 +115,6 @@ export const EXPERIENCES: Experience[] = [
     companyName: "Freelance",
     positions: [
       {
-        id: "f0becfba-057d-40db-b252-739e1654faa1",
-        title: "Full-stack Developer",
-        employmentPeriod: {
-          start: "2025",
-        },
-        employmentType: "Part-time",
-        description: `**Key Projects:**
-
-- **[Sisdocx - MERM Version](/internal-project)** - Developed a document management platform frontend using React, Redux Toolkit, and RTK Query, integrated with a Django backend for patient workflows, document processing, authentication with Djoser, and SLA monitoring.
-
-- **[Ecosistemx](/internal-project)** - IoT platform for environmental monitoring of greenhouses. It integrates an ESP32 and temperature and humidity sensors to capture environmental data, which is processed by a Node.js backend and visualized via a Next.js frontend. The project was conceived as a university prototype and its architecture is scalable to Wi-Fi and MQTT-based communication for production deployments.`,
-        icon: "code",
-        skills: [
-          "System Design",
-          "Arduino IDE",
-          "ESP32",
-          "IoT",
-          "React",
-          "Next.js",
-          "Redux Toolkit",
-          "TypeScript",
-          "JavaScript",
-          "Node.js",
-          "Django",
-          "Djoser",
-          "RTK Query",
-          "PostgreSQL",
-          "API Integration",
-        ],
-        isExpanded: true,
-      },
-      {
         id: "0eecdfcb-028d-41f4-93e9-1269ba7eff7e",
         title: "UI/UX",
         employmentPeriod: {
@@ -170,6 +136,7 @@ export const EXPERIENCES: Experience[] = [
           "Swiper.js",
           "Clarity Analytics",
         ],
+        isExpanded: true,
       },
     ],
   },
@@ -198,25 +165,6 @@ export const EXPERIENCES: Experience[] = [
           "Computer Networks",
           "Cloud Computing",
           "Artificial Intelligence",
-        ],
-      },
-      {
-        id: "70131ed8-36d9-4e54-8c78-eaed18240eca",
-        title: "Atahualpa Educational Unit",
-        employmentPeriod: {
-          start: "08.2016",
-          end: "08.2019",
-        },
-        icon: "education",
-        description: `- Completed a three-year technical high school program specializing in **Electronics**.
-- Studied analog and digital electronics, electrical circuits, microcontrollers, and industrial automation.
-- Developed practical projects involving electronic circuits and embedded systems.`,
-        skills: [
-          "Analog Electronics",
-          "Digital Electronics",
-          "Electrical Circuits",
-          "Microcontrollers",
-          "Embedded Systems",
         ],
       },
     ],

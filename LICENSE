@@ -1,4 +1,6 @@
-MIT License
+# License
+
+## Code (MIT License)
 
 Copyright (c) 2026 Sebastián Palate
 
@@ -19,3 +21,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Content (All Rights Reserved)
+
+All text, descriptions, images, personal data, and other content located in
+`src/features/profile/data/` and `public/images/` are Copyright (c) 2026
+Sebastián Palate. All rights reserved.
+
+No part of this content may be reproduced, distributed, or transmitted in any
+form without the prior written permission of the copyright holder.

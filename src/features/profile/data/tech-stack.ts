@@ -186,13 +186,6 @@ export const TECH_STACK: TechStack[] = [
     theme: true,
   },
   {
-    key: "motion",
-    title: "Motion",
-    href: "https://motion.dev/",
-    categories: ["Library", "Animation"],
-    iconUrl: "https://motion.dev/favicon.ico",
-  },
-  {
     key: "tanstack",
     title: "TanStack",
     href: "https://tanstack.com/",
@@ -209,13 +202,6 @@ export const TECH_STACK: TechStack[] = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactrouter/reactrouter-original.svg",
     theme: true,
   },
-  // {
-  //   key: "react-navigation",
-  //   title: "React Navigation",
-  //   href: "https://reactnavigation.org/",
-  //   categories: ["Library", "Navigation"],
-  //   iconUrl: "https://reactnavigation.org/img/spiro.svg",
-  // },
   {
     key: "git",
     title: "Git",
@@ -284,7 +270,7 @@ export const TECH_STACK: TechStack[] = [
     key: "cloudinary",
     title: "Cloudinary",
     href: "https://cloudinary.com/",
-    categories: ["Database"],
+    categories: ["Storage"],
     iconUrl:
       "https://res.cloudinary.com/cloudinary-marketing/image/upload/f_auto,q_auto/v1599098500/creative_source/Logo/Cloud%20Glyph/cloudinary_cloud_glyph_blue_png.png",
   },
@@ -304,31 +290,6 @@ export const TECH_STACK: TechStack[] = [
     iconUrl: "https://chatgpt.com/favicon.ico",
     theme: true,
   },
-  {
-    key: "freecodecamp",
-    title: "freeCodeCamp",
-    href: "https://www.freecodecamp.org/",
-    categories: ["Others"],
-    iconUrl: "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
-    theme: true,
-  },
-  {
-    key: "fiverr",
-    title: "Fiverr",
-    href: "https://www.fiverr.com/",
-    categories: ["Others"],
-    iconUrl:
-      "https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/fiverr-128.png",
-  },
-  {
-    key: "stackoverflow",
-    title: "Stack Overflow",
-    href: "https://stackoverflow.com/",
-    categories: ["Others"],
-    iconUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/stackoverflow/stackoverflow-original.svg",
-  },
-
   {
     key: "render",
     title: "Render",

@@ -3,6 +3,18 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import { SocialLink } from "@/features/profile/types/social-links";
+import { Icons } from "@/components/icons";
+
+const BRAND_SOCIAL_ICONS: Record<string, keyof typeof Icons> = {
+  "github": "github",
+} as const;
+
+function isBrandIcon(url: string): keyof typeof Icons | null {
+  for (const [key, iconKey] of Object.entries(BRAND_SOCIAL_ICONS)) {
+    if (url.includes(key)) return iconKey;
+  }
+  return null;
+}
 
 export function SocialLinkItem({
   icon,
@@ -11,6 +23,9 @@ export function SocialLinkItem({
   href,
   padding,
 }: SocialLink) {
+  const brandIcon = isBrandIcon(icon);
+  const IconComponent = brandIcon ? Icons[brandIcon] : null;
+
   return (
     <a
       className={cn(
@@ -22,16 +37,20 @@ export function SocialLinkItem({
       target="_blank"
       rel="noopener"
     >
-      <div className="relative size-12 shrink-0">
-        <Image
-          className={`rounded-xl object-contain ${padding && "p-1.75"}`}
-          src={icon}
-          alt={title}
-          width={48}
-          height={48}
-          quality={100}
-          unoptimized
-        />
+      <div className="relative flex size-12 shrink-0 items-center justify-center">
+        {IconComponent ? (
+          <IconComponent className="size-7 text-foreground" />
+        ) : (
+          <Image
+            className={`rounded-xl object-contain ${padding && "p-1.75"}`}
+            src={icon}
+            alt={title}
+            width={48}
+            height={48}
+            quality={100}
+            unoptimized
+          />
+        )}
         <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/10 ring-inset dark:ring-white/10" />
       </div>
 
