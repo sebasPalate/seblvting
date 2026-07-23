@@ -32,8 +32,6 @@ export type User = {
   about: string;
   /** Public URL to avatar image */
   avatar: string;
-  /** Open Graph image URL for social sharing */
-  ogImage: string;
   /** SEO keywords list for metadata */
   keywords: string[];
   /** Time zone in IANA format (e.g., "Asia/Ho_Chi_Minh") */

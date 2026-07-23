@@ -31,6 +31,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# generated metadata
+src/assets/libphonenumber.metadata.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

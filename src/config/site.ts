@@ -4,7 +4,7 @@ import { NavItem } from "@/types/nav";
 export const SITE_INFO = {
   name: USER.displayName,
   url: process.env.APP_URL || "https://seblvting.vercel.app",
-  ogImage: USER.ogImage,
+  ogImage: `${process.env.APP_URL || "https://seblvting.vercel.app"}/og/simple?title=seblvting`,
   description: USER.bio,
   keywords: USER.keywords,
 };
