@@ -2,28 +2,6 @@ import { Project } from "@/features/profile/types/projects";
 
 export const PROJECTS: Project[] = [
   {
-    id: "sisdocx-merm",
-    title: "SisDocx MERM - Prototype",
-    period: { start: "01.2024", end: "06.2024" },
-    link: "https://github.com/Levting/SisDocx",
-    skills: [
-      "Next.js",
-      "TypeScript",
-      "JWT Authentication",
-      "Djoser",
-      "RTK Query",
-      "Redux Toolkit",
-      "Django",
-      "PostgreSQL",
-    ],
-    description: `Early prototype for SisDocx built in Next.js, before the thesis version needed to align with EEASA's Java/Oracle stack.
-- Entry and authentication model with JWT support via Djoser.
-- State management wired with RTK Query and a lightweight Redux setup.
-- Revisiting the concept with document storage on S3 as a possible future direction.`,
-    logo: "",
-  },
-
-  {
     id: "document-management-system",
     title: "SisDocx - Document Management System",
     period: { start: "06.2024" },
@@ -45,6 +23,27 @@ export const PROJECTS: Project[] = [
 - Centralized management of technical documents across multiple departments.
 - Developed as part of an academic thesis project in collaboration with EEASA.
 - Backend repository: [SisDocx-Backend](https://github.com/Levting/SisDocx-Backend)`,
+    logo: "",
+  },
+  {
+    id: "sisdocx-merm",
+    title: "SisDocx MERM - Prototype",
+    period: { start: "01.2024", end: "06.2024" },
+    link: "https://github.com/Levting/SisDocx",
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "JWT Authentication",
+      "Djoser",
+      "RTK Query",
+      "Redux Toolkit",
+      "Django",
+      "PostgreSQL",
+    ],
+    description: `Early prototype for SisDocx built in Next.js, before the thesis version needed to align with EEASA's Java/Oracle stack.
+- Entry and authentication model with JWT support via Djoser.
+- State management wired with RTK Query and a lightweight Redux setup.
+- Revisiting the concept with document storage on S3 as a possible future direction.`,
     logo: "",
   },
   {
