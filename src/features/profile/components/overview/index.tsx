@@ -3,7 +3,6 @@ import { CurrentLocalTimeItem } from "./current-local-time-item";
 import { EmailItem } from "./email-item";
 import { IntroItem, IntroItemContent, IntroItemIcon, IntroItemLink } from "./intro-item";
 import { JobItem } from "./job-item";
-import { PhoneItem } from "./phone-item";
 import { USER } from "@/features/profile/data/user";
 import { urlToName } from "@/utils/url";
 import { Panel } from "@/features/profile/components/panel";
@@ -42,25 +41,25 @@ export function Overview() {
             </IntroItemContent>
           </IntroItem>
 
-          <PhoneItem phoneNumber={USER.phoneNumber} />
+          <EmailItem email={USER.email} />
 
           <CurrentLocalTimeItem timeZone={USER.timeZone} />
 
-          <EmailItem email={USER.email} />
-
-          <IntroItem>
-            <IntroItemIcon>
-              <GlobeIcon />
-            </IntroItemIcon>
-            <IntroItemContent>
-              <IntroItemLink
-                href={USER.website}
-                aria-label={`Personal website: ${urlToName(USER.website)}`}
-              >
-                {urlToName(USER.website)}
-              </IntroItemLink>
-            </IntroItemContent>
-          </IntroItem>
+          {USER.website && (
+            <IntroItem>
+              <IntroItemIcon>
+                <GlobeIcon />
+              </IntroItemIcon>
+              <IntroItemContent>
+                <IntroItemLink
+                  href={USER.website}
+                  aria-label={`Personal website: ${urlToName(USER.website)}`}
+                >
+                  {urlToName(USER.website)}
+                </IntroItemLink>
+              </IntroItemContent>
+            </IntroItem>
+          )}
         </div>
       </div>
     </Panel>

@@ -11,9 +11,7 @@ export const USER: User = {
   timeZone: "America/Guayaquil",
   flipSentences: ["Fullstack Web Developer", "AI Agent Engineer", "UX/UI Designer"],
   address: "Ambato, Ecuador",
-  phoneNumber: "KzU5Mzk5NTE0NTM3OA==", // E.164 format, base64-obfuscated (NOT encryption — trivially reversible)
   email: "c2ViYXMucGFsYXRlMTFAZ21haWwuY29t", // base64-obfuscated against basic scraping (NOT encryption — trivially reversible)
-  website: "https://seblvting.vercel.app",
   jobTitle: "Fullstack Developer",
   jobs: [
     {

@@ -3,7 +3,7 @@ import sharp from "sharp";
 import VCard from "vcard-creator";
 
 import { USER } from "@/features/profile/data/user";
-import { decodeEmail, decodePhoneNumber } from "@/lib/string";
+import { decodeEmail } from "@/lib/string";
 
 export const dynamic = "force-static";
 
@@ -15,10 +15,16 @@ export async function GET() {
       familyName: USER.lastName,
       givenName: USER.firstName,
     })
-    .addPhoneNumber({ number: decodePhoneNumber(USER.phoneNumber) })
     .addAddress({ street: USER.address })
-    .addEmail({ address: decodeEmail(USER.email) })
-    .addUrl({ url: USER.website });
+    .addEmail({ address: decodeEmail(USER.email) });
+
+  if (USER.phoneNumber) {
+    card.addPhoneNumber({ number: atob(USER.phoneNumber) });
+  }
+
+  if (USER.website) {
+    card.addUrl({ url: USER.website });
+  }
 
   const photo = await getVCardPhoto(USER.avatar);
   if (photo) {
