@@ -23,7 +23,6 @@ export const PROJECTS: Project[] = [
 - Centralized management of technical documents across multiple departments.
 - Developed as part of an academic thesis project in collaboration with EEASA.
 - Backend repository: [SisDocx-Backend](https://github.com/Levting/SisDocx-Backend)`,
-    logo: "",
   },
   {
     id: "sisdocx-merm",
@@ -44,7 +43,6 @@ export const PROJECTS: Project[] = [
 - Entry and authentication model with JWT support via Djoser.
 - State management wired with RTK Query and a lightweight Redux setup.
 - Revisiting the concept with document storage on S3 as a possible future direction.`,
-    logo: "",
   },
   {
     id: "color-prediction",
@@ -56,7 +54,6 @@ export const PROJECTS: Project[] = [
 - Computer vision for color classification of garments using image processing techniques.
 - Estimated ~89% accuracy in manual testing across a dataset of over 1200 images.
 - Feature extraction and preprocessing techniques.`,
-    logo: "",
   },
   {
     id: "factx-invoice-system",
@@ -78,7 +75,6 @@ export const PROJECTS: Project[] = [
 - Frontend built with JavaScript and uses Bootstrap to provide an interactive user interface.
 - Allows for easy and fast management of electronic invoices, integrating with SRI services for invoice validation and submission.
 - Backend repository: [Factx-Backend](https://github.com/sebasPalate/Factx-Backend)`,
-    logo: "",
   },
 
   {
@@ -102,6 +98,5 @@ export const PROJECTS: Project[] = [
 - Allows users to make reservations based on availability.
 - CRUD operations for vehicle, staff, and support reservations.
 - Uses Room to manage the local reservation database.`,
-    logo: "",
   },
 ];
